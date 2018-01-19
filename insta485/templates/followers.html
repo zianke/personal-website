@@ -8,9 +8,9 @@
 </head>
 <body>
 <div class="header">
-    <a href="/"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
-    <div class="header-links"><a href="/explore/">explore</a><span> | </span><a
-            href="/u/{{logname}}/">{{logname}}</a></div>
+    <a href="{{ url_for('index') }}"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
+    <div class="header-links"><a href="{{ url_for('explore') }}">explore</a><span> | </span><a
+            href="{{ url_for('user',username = logname) }}">{{logname}}</a></div>
 </div>
 <h1 style="margin-left: 80px">Followers</h1>
 {% for follower in followers %}
@@ -18,8 +18,8 @@
     <table style="width: 100%">
         <tr>
             <td>
-                <a href="/u/{{follower.username}}/"><img src="{{follower.user_img_url}}" alt="follower_img"></a>
-                <a href="/u/{{follower.username}}/">{{follower.username}}</a>
+                <a href="{{ url_for('user', username = follower.username) }}"><img src="{{follower.user_img_url}}" alt="follower_img"></a>
+                <a href="{{ url_for('user', username = follower.username) }}">{{follower.username}}</a>
             </td>
             {% if follower.username != logname and follower.logname_follows_username %}
             <td style="float: right">

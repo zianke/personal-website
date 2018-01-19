@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="header">
-    <a href="/"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
+    <a href="{{ url_for('index') }}"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
     <div class="header-links"><a href="">Login</a></div>
 </div>
 
@@ -19,7 +19,7 @@
     </form>
 
     <p style="font-size: 20px">
-        Don't have an account? <a href="/accounts/create/" style="font-weight: bold">Sign up</a>
+        Don't have an account? <a href="{{ url_for('create') }}" style="font-weight: bold">Sign up</a>
     </p>
 </div>
 

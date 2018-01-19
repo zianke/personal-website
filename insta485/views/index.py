@@ -7,7 +7,6 @@ import insta485.model
 @insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + '/', methods=['GET', 'POST'])
 def index():
     """Display / route."""
-    print('asdf')
     if insta485.model.check_login() != 'login':
         return insta485.model.check_login()
     logname_index = flask.session[

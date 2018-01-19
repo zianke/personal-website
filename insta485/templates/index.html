@@ -8,22 +8,22 @@
 </head>
 <body>
 <div class="header">
-    <a href="/"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
-    <div class="header-links"><a href="/explore/">explore</a><span> | </span><a
-            href="/u/{{logname}}/">{{logname}}</a></div>
+    <a href="{{ url_for('index') }}"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
+    <div class="header-links"><a href="{{ url_for('explore') }}">explore</a><span> | </span><a
+            href="{{ url_for('user',username = logname) }}">{{logname}}</a></div>
 </div>
 {% for post in posts %}
 <div class="post">
     <div class="post-header">
-        <a href="/u/{{post.owner}}/"><img src="{{post.owner_img_url}}" alt="post_owner_img"></a>
-        <a href="/u/{{post.owner}}/" class="username">{{post.owner}}</a>
-        <a class="post-time" href="/p/{{post.postid}}/">{{post.timestamp}}</a>
+        <a href="{{ url_for('user', username = post.owner) }}"><img src="{{post.owner_img_url}}" alt="post_owner_img"></a>
+        <a href="{{ url_for('user', username = post.owner) }}" class="username">{{post.owner}}</a>
+        <a class="post-time" href="{{ url_for('post', postid = post.postid) }}">{{post.timestamp}}</a>
     </div>
     <img src="{{post.img_url}}" alt="post_img">
     <div class="comments">
         <p>{{post.likes}} like{% if post.likes != 1 %}s{% endif %}</p>
         {% for comment in post.comments %}
-        <p><a class="username" href="/u/{{comment.owner}}/">{{comment.owner}}</a> {{comment.text}}</p>
+        <p><a class="username" href="{{ url_for('user', username = comment.owner) }}">{{comment.owner}}</a> {{comment.text}}</p>
         {% endfor %}
         <form action="" method="post" enctype="multipart/form-data">
             <input type="hidden" name="postid" value="{{post.postid}}"/>
