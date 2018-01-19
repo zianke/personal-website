@@ -18,7 +18,7 @@
     <table style="width: 100%">
         <tr>
             <td>
-                <a href="{{ url_for('user', username = user.username) }}/"><img src="{{user.user_img_url}}" alt="user_img"></a>
+                <a href="{{ url_for('user', username = user.username) }}"><img src="{{user.user_img_url}}" alt="user_img"></a>
                 <a href="{{ url_for('user', username = user.username) }}">{{user.username}}</a>
             </td>
             <td style="float: right">
