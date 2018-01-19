@@ -1,4 +1,4 @@
 # personal-website
-Personal Website of Zian Ke
+Personal website of Zian Ke
 <br />
 kezian.me
