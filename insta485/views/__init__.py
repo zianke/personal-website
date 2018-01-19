@@ -12,3 +12,4 @@ from insta485.views.edit import edit
 from insta485.views.password import password
 from insta485.views.delete import delete
 from insta485.views.file import file
+from insta485.views.root import root

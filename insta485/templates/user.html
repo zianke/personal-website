@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>User</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/user.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('index') }}static/css/header.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('index') }}static/css/user.css">
 </head>
 <body>
 <div class="header">
-    <a href="/"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
-    <div class="header-links"><a href="/explore/">explore</a><span> | </span><a
-            href="/u/{{logname}}/">{{logname}}</a></div>
+    <a href="{{ url_for('index') }}"><img src="{{ url_for('index') }}static/images/logo.png" class="logo" alt="logo"></a>
+    <div class="header-links"><a href="{{ url_for('explore') }}">explore</a><span> | </span><a
+            href="{{ url_for('user',username = logname) }}">{{logname}}</a></div>
 </div>
-<a href="/u/{{username}}/" class="info-title">{{username}}</a>
+<a href="{{ url_for('user',username = username) }}" class="info-title">{{username}}</a>
 <div class="info">
     {% if username != logname and logname_follows_username %}<p class="following">following</p>
     <form action="" method="post" enctype="multipart/form-data">
@@ -26,12 +26,12 @@
     </form>
     {% endif %}
     {% if username == logname %}
-    <a href="/accounts/edit/" class="username" style="margin-left: 0">Edit profile</a><span
-        style="font-family: Arial; font-size: 20px"> | </span><a href="/accounts/logout/" class="username" style="margin-left: 0">logout</a>
+    <a href="{{ url_for('edit') }}" class="username" style="margin-left: 0">Edit profile</a><span
+        style="font-family: Arial; font-size: 20px"> | </span><a href="{{ url_for('logout') }}" class="username" style="margin-left: 0">logout</a>
     {% endif %}
-    <p>{{total_posts}} post{% if total_posts != 1 %}s{% endif %} <a href="/u/{{username}}/followers/" class="username">{{followers}}
+    <p>{{total_posts}} post{% if total_posts != 1 %}s{% endif %} <a href="{{ url_for('followers',username=username) }}" class="username">{{followers}}
         follower{% if followers != 1 %}s{% endif %}</a> <a
-            href="/u/{{username}}/following/" class="username">{{following}} following</a></p>
+            href="{{ url_for('following',username = username) }}" class="username">{{following}} following</a></p>
     <p>{{fullname}}</p>
     {% if username == logname %}
     <div class="div_border">
@@ -44,7 +44,7 @@
 </div>
 <div class="images">
     {% for post in posts %}
-    <a href="/p/{{post.postid}}/"><img src="{{post.img_url}}" alt="post_img"></a>
+    <a href="{{ url_for('post',postid = post.postid) }}"><img src="{{post.img_url}}" alt="post_img"></a>
     {% endfor %}
 </div>
 </body>

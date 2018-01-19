@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Following</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/following.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('index') }}static/css/header.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('index') }}static/css/following.css">
 </head>
 <body>
 <div class="header">
-    <a href="/"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
-    <div class="header-links"><a href="/explore/">explore</a><span> | </span><a
-            href="/u/{{logname}}/">{{logname}}</a></div>
+    <a href="{{ url_for('index') }}"><img src="{{ url_for('index') }}static/images/logo.png" class="logo" alt="logo"></a>
+    <div class="header-links"><a href="{{ url_for('explore') }}">explore</a><span> | </span><a
+            href="{{ url_for('user',username = logname) }}">{{logname}}</a></div>
 </div>
 <h1 style="margin-left: 80px">Following</h1>
 {% for follow in following %}
@@ -18,8 +18,8 @@
     <table style="width: 100%">
         <tr>
             <td>
-                <a href="/u/{{follow.username}}/"><img src="{{follow.user_img_url}}" alt="following_img"></a>
-                <a href="/u/{{follow.username}}/">{{follow.username}}</a>
+                <a href="{{ url_for('user', username = follow.username) }}"><img src="{{follow.user_img_url}}" alt="following_img"></a>
+                <a href="{{ url_for('user', username = follow.username) }}">{{follow.username}}</a>
             </td>
             {% if follow.username != logname and follow.logname_follows_username %}
             <td style="float: right">
