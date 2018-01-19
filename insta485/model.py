@@ -75,7 +75,7 @@ def get_user_info(username, logname):
     """Get info of username."""
     user_info = {}
     user_info['username'] = username
-    user_info['user_img_url'] = '/uploads/' + get_user_filename(
+    user_info['user_img_url'] = insta485.app.config['APPLICATION_ROOT'] + 'uploads/' + get_user_filename(
         username)
     user_info['logname_follows_username'] = is_following(logname,
                                                          username)
@@ -182,9 +182,9 @@ def get_post(postid, logname):
     cur = get_db().execute(
         "SELECT * FROM posts WHERE postid = {}".format(postid))
     post = cur.fetchone()
-    post['owner_img_url'] = '/uploads/' + get_user_filename(
+    post['owner_img_url'] = insta485.app.config['APPLICATION_ROOT'] + 'uploads/' + get_user_filename(
         post['owner'])
-    post['img_url'] = '/uploads/' + post.pop('filename')
+    post['img_url'] = insta485.app.config['APPLICATION_ROOT'] + 'uploads/' + post.pop('filename')
     post['timestamp'] = arrow.get(post['created']).humanize()
     post['likes'] = get_post_like(post['postid'])
     post['comments'] = get_comments(post['postid'])
@@ -239,7 +239,7 @@ def get_not_following(logname):
     cur.close()
     for not_following in not_followings:
         not_following[
-            'user_img_url'] = '/uploads/' + \
+            'user_img_url'] = insta485.app.config['APPLICATION_ROOT'] + 'uploads/' + \
                               not_following.pop('filename')
     return not_followings
 
@@ -304,7 +304,7 @@ def get_user_info_edit(username):
             username))
     user_info_edit = cur.fetchone()
     cur.close()
-    user_info_edit['filename'] = '/uploads/' + user_info_edit[
+    user_info_edit['filename'] = insta485.app.config['APPLICATION_ROOT'] + 'uploads/' + user_info_edit[
         'filename']
     return user_info_edit
 
