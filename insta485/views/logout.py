@@ -4,7 +4,7 @@ import insta485
 import insta485.model
 
 
-@insta485.app.route('/accounts/logout/')
+@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + '/accounts/logout/')
 def logout():
     """Display /accounts/logout/ route."""
     if insta485.app.config['SESSION_COOKIE_NAME'] in flask.session:

@@ -4,9 +4,11 @@ import insta485
 import insta485.model
 
 
-@insta485.app.route('/accounts/login/', methods=['GET', 'POST'])
+@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + '/accounts/login/', methods=['GET', 'POST'])
 def login():
     """Display /accounts/login/ route."""
+    print('here')
+    print(insta485.app.config['APPLICATION_ROOT'])
     if insta485.app.config['SESSION_COOKIE_NAME'] in flask.session:
         return flask.redirect(flask.url_for('index'))
     if flask.request.method == 'POST' and insta485.model.check_password(

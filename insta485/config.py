@@ -7,10 +7,10 @@ Andrew DeOrio <awdeorio@umich.edu>
 import os
 
 # Root of this application, useful if it doesn't occupy an entire domain
-APPLICATION_ROOT = '/'
+APPLICATION_ROOT = '/insta485'
 
 # Secret key for encrypting cookies
-SECRET_KEY = b'\x88\xd05)\xf5\xfb\xd1\xaf\x9a\\\x86\xaf\xa7\x84,\xcc\xa5T\x17|\xa8`@\xbf'  # noqa: E501  pylint: disable=line-too-long
+SECRET_KEY = b'\xab\x83\r\xfaV\xb4\xf5b\x88\x13\x8f\xc4e\xe3\x80\xddB\x98\xa7,\xe6\xc1\xf0='  # noqa: E501  pylint: disable=line-too-long
 SESSION_COOKIE_NAME = 'login'
 
 # File Upload to var/uploads/
