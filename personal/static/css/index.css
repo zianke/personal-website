@@ -1,6 +1,30 @@
 /*For Home Section*/
 .home {
-    background: url(../images/homebg.jpg) no-repeat center center;
+    min-height: 50vw;
+}
+
+#about {
+    background: url(/static/images/index_about.jpg) no-repeat center center;
+    color: #000;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+
+#blog {
+    background: url(/static/images/index_blog.jpg) no-repeat center center;
+    color: #000;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+
+#projects {
+    background: url(/static/images/index_projects.jpg) no-repeat center center;
     color: #000;
     background-size: cover;
     -webkit-background-size: cover;
