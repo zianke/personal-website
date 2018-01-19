@@ -4,7 +4,7 @@ import insta485
 import insta485.model
 
 
-@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + '/accounts/create/',
+@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + 'accounts/create/',
                     methods=['GET', 'POST'])
 def create():
     """Display /accounts/create/ route."""

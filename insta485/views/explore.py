@@ -4,7 +4,7 @@ import insta485
 import insta485.model
 
 
-@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + '/explore/', methods=['GET', 'POST'])
+@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + 'explore/', methods=['GET', 'POST'])
 def explore():
     """Display /explore/ route."""
     if insta485.model.check_login() != 'login':

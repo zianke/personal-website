@@ -4,7 +4,7 @@ import insta485
 import insta485.model
 
 
-@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + '/accounts/login/', methods=['GET', 'POST'])
+@insta485.app.route(insta485.app.config['APPLICATION_ROOT'] + 'accounts/login/', methods=['GET', 'POST'])
 def login():
     """Display /accounts/login/ route."""
     print('here')
