@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Delete</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/delete.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('index') }}static/css/header.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('index') }}static/css/delete.css">
 </head>
 <body>
 <div class="header">
-    <a href="{{ url_for('index') }}"><img src="/static/images/logo.png" class="logo" alt="logo"></a>
+    <a href="{{ url_for('index') }}"><img src="{{ url_for('index') }}static/images/logo.png" class="logo" alt="logo"></a>
     <div class="header-links"><a href="{{ url_for('explore') }}">explore</a><span> | </span><a
             href="{{ url_for('user',username = logname) }}">{{logname}}</a></div>
 </div>
