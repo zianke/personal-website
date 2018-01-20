@@ -38,20 +38,44 @@
     overflow: hidden;
 }
 
+
 .home-content h1 {
+    margin-bottom: 30px;
+}
+
+.home-content h1 span {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 30px;
     color: #fff;
+    background: rgba(0, 0, 0, .3);
+    padding: 0 5px;
 }
 
 .home-content p {
     margin-bottom: 30px;
+    line-height: 250%;
+}
+
+.home-content p span {
+    font-size: 20px;
     color: #fff;
+    background: rgba(0, 0, 0, .3);
+    padding: 5px;
 }
 
 .home-content .home-contact {
     margin-top: 90px;
+}
+
+.home-content .home-contact input[type="submit"]{
+    display:inline-block;
+    width:35%;
+    background:#82ca9c;
+    color:#fff;
+    border: 0px;
+}
+.home-content .home-contact input[type="submit"]:hover{
+    background-color: rgba(0, 173, 62, 0.75);
 }
 
 .home-contact .input-group {
@@ -78,16 +102,6 @@
     background: #82ca9c;
     color: #fff;
     border: 0px;
-}
-
-.home-content .home-contact input[type="submit"]:hover {
-    background-color: rgba(0, 173, 62, 0.75);
-}
-
-.home-contact p {
-    margin-top: 20px;
-    color: #000;
-    font-size: 15px;
 }
 
 .form-control {
