@@ -502,11 +502,6 @@ Extra height css
     padding: 40px 0;
 }
 
-h1 span {
-    color: #f56363;
-    font-weight: 400;
-}
-
 /*for placeholder changes*/
 
 input::-webkit-input-placeholder {
