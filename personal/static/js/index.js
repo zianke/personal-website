@@ -37,8 +37,8 @@ jQuery(document).ready(function ($) {
      * Underline text when hovering
      ---------------------------------------------*/
     $('.home-content h1 span').hover(function () {
-       $(this).parents('.home-text').find('h1 span, p span').css({'text-decoration':'underline','background': 'rgba(0, 0, 0, .5)'});
+       $(this).parents('.home-text').find('h1 span, li').css({'text-decoration':'underline','background': 'rgba(0, 0, 0, .5)'});
     },function () {
-        $(this).parents('.home-text').find('h1 span, p span').css({'text-decoration':'none','background': 'rgba(0, 0, 0, .3)'});
+        $(this).parents('.home-text').find('h1 span, li').css({'text-decoration':'none','background': 'rgba(0, 0, 0, .3)'});
     });
 });

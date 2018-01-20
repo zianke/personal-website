@@ -1,6 +1,6 @@
 /*For Home Section*/
 .home {
-    min-height: 50vw;
+    min-height: 48vw;
 }
 
 #about {
@@ -34,10 +34,9 @@
 }
 
 .home-wrapper {
-    padding: 180px 0px;
+    padding: 220px 0px;
     overflow: hidden;
 }
-
 
 .home-content h1 {
     margin-bottom: 30px;
@@ -51,14 +50,14 @@
     padding: 0 5px;
 }
 
-.home-content p {
-    margin-bottom: 30px;
-    line-height: 250%;
+.home-content ul {
+    list-style-type: circle;
 }
 
-.home-content p span {
-    font-size: 20px;
+.home-content li {
+    display: inline-block;
     color: #fff;
+    font-size: 20px;
     background: rgba(0, 0, 0, .3);
     padding: 5px;
 }
@@ -67,14 +66,15 @@
     margin-top: 90px;
 }
 
-.home-content .home-contact input[type="submit"]{
-    display:inline-block;
-    width:35%;
-    background:#82ca9c;
-    color:#fff;
+.home-content .home-contact input[type="submit"] {
+    display: inline-block;
+    width: 35%;
+    background: #82ca9c;
+    color: #fff;
     border: 0px;
 }
-.home-content .home-contact input[type="submit"]:hover{
+
+.home-content .home-contact input[type="submit"]:hover {
     background-color: rgba(0, 173, 62, 0.75);
 }
 
@@ -119,4 +119,9 @@
     max-width: 55%;
     margin: 10px auto;
     padding-bottom: 20px;
+}
+
+#projects input {
+    width: 100%;
+    max-width: 30em
 }
