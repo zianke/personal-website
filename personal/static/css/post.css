@@ -1,0 +1,9 @@
+.post-content {
+    margin: auto;
+    max-width: 1200px;
+    padding: 10%;
+}
+
+.post-content h1 {
+    margin-bottom: 20px;
+}

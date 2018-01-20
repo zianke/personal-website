@@ -23,10 +23,10 @@ case $1 in
     set -x
     mkdir -p var/uploads
     echo "+ mkdir -p var/uploads"
-    sqlite3 var/insta485.sqlite3 < sql/schema.sql
-    echo "+ sqlite3 var/insta485.sqlite3 < sql/schema.sql"
-    sqlite3 var/insta485.sqlite3 < sql/data.sql
-    echo "+ sqlite3 var/insta485.sqlite3 < sql/data.sql"
+    sqlite3 var/insta485.sqlite3 < sql/insta485_schema.sql
+    echo "+ sqlite3 var/insta485.sqlite3 < sql/insta485_schema.sql"
+    sqlite3 var/insta485.sqlite3 < sql/insta485_data.sql
+    echo "+ sqlite3 var/insta485.sqlite3 < sql/insta485_data.sql"
     cp sql/uploads/* var/uploads/
     echo "+ cp sql/uploads/* var/uploads/"
     ;;
@@ -43,10 +43,10 @@ case $1 in
     echo "+ rm -rf var/insta485.sqlite3 var/uploads"
     mkdir -p var/uploads
     echo "+ mkdir -p var/uploads"
-    sqlite3 var/insta485.sqlite3 < sql/schema.sql
-    echo "+ sqlite3 var/insta485.sqlite3 < sql/schema.sql"
-    sqlite3 var/insta485.sqlite3 < sql/data.sql
-    echo "+ sqlite3 var/insta485.sqlite3 < sql/data.sql"
+    sqlite3 var/insta485.sqlite3 < sql/insta485_schema.sql
+    echo "+ sqlite3 var/insta485.sqlite3 < sql/insta485_schema.sql"
+    sqlite3 var/insta485.sqlite3 < sql/insta485_data.sql
+    echo "+ sqlite3 var/insta485.sqlite3 < sql/insta485_data.sql"
     cp sql/uploads/* var/uploads/
     echo "+ cp sql/uploads/* var/uploads/"
     ;;

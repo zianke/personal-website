@@ -7,5 +7,5 @@ import personal.model
 @personal.app.route('/', methods=['GET', 'POST'])
 def index():
     """Display / route."""
-    context = {}
+    context = {'active': 'index'}
     return flask.render_template("index.html", **context)
