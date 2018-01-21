@@ -4,7 +4,7 @@ import personal
 import personal.model
 
 
-@personal.app.route('/', methods=['GET', 'POST'])
+@personal.app.route('/')
 def index():
     """Display / route."""
     context = {'active': 'index'}
