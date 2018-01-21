@@ -1,6 +1,6 @@
 .blog-area {
     background-image: url(/static/images/blog_bg.jpg);
-    padding-bottom: 40px;
+    padding: 40px 0 40px 0;
 }
 
 .post-content {
@@ -17,6 +17,7 @@
 }
 
 .carousel-inner {
+    border-top: 4px solid rgb(100, 100, 100);
     border-bottom: 4px solid rgb(100, 100, 100);
     border-left: 4px solid rgb(145, 145, 145);
     border-right: 4px solid rgb(145, 145, 145);

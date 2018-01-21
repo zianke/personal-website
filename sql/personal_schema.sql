@@ -13,6 +13,7 @@ CREATE TABLE post (
   cover      VARCHAR(128)   NOT NULL,
   is_project INTEGER        NOT NULL,
   title      VARCHAR(128)   NOT NULL,
+  abstract   VARCHAR(1024)  NOT NULL,
   text       VARCHAR(32768) NOT NULL,
   uri        VARCHAR(128)   NOT NULL,
   created    TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,

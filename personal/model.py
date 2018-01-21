@@ -51,7 +51,7 @@ def expand_filename(filename):
 
 
 def get_post(uri):
-    cur = get_db().execute("SELECT * FROM post WHERE uri='{}' ORDER BY created DESC".format(uri))
+    cur = get_db().execute("SELECT * FROM post WHERE uri='{}'".format(uri))
     post = cur.fetchone()
     cur = get_db().execute(
         "SELECT photo.* FROM photo_display, photo WHERE post_id = {} AND photo_display.photo_id=photo.photo_id".format(
@@ -68,3 +68,17 @@ def get_post(uri):
     post['paragraphs'] = str(post['text']).split('\n')
     cur.close()
     return post
+
+
+def get_posts():
+    cur = get_db().execute("SELECT * FROM post ORDER BY created DESC")
+    posts = cur.fetchall()
+    for post in posts:
+        post['cover'] = expand_filename(post['cover'])
+        if len(post['abstract']) == 0:
+            if len(post['text']) < 200:
+                post['abstract'] = post['text']
+            else:
+                post['abstract'] = post['text'][:200]
+    cur.close()
+    return posts
