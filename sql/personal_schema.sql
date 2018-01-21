@@ -10,6 +10,7 @@ CREATE TABLE user (
 
 CREATE TABLE post (
   post_id    INTEGER        NOT NULL,
+  cover      VARCHAR(128)   NOT NULL,
   is_project INTEGER        NOT NULL,
   title      VARCHAR(128)   NOT NULL,
   text       VARCHAR(32768) NOT NULL,

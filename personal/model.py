@@ -51,7 +51,7 @@ def expand_filename(filename):
 
 
 def get_post(uri):
-    cur = get_db().execute("SELECT * FROM post WHERE uri='{}'".format(uri))
+    cur = get_db().execute("SELECT * FROM post WHERE uri='{}' ORDER BY created DESC".format(uri))
     post = cur.fetchone()
     cur = get_db().execute(
         "SELECT photo.* FROM photo_display, photo WHERE post_id = {} AND photo_display.photo_id=photo.photo_id".format(

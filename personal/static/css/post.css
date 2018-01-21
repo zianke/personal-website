@@ -1,9 +1,23 @@
+.blog-area {
+    background-image: url(/static/images/blog_bg.jpg);
+    padding-bottom: 40px;
+}
+
 .post-content {
-    margin: auto;
-    max-width: 1200px;
-    padding: 10%;
+    margin: 40px auto 0 auto;
+    width: 80%;
+    padding: 5% 7%;
+    background-color: #fff;
+    border-top: 10px solid rgb(245, 245, 245);
+    border-bottom: 4px solid rgb(145, 145, 145);
 }
 
 .post-content h1 {
     margin-bottom: 20px;
+}
+
+.carousel-inner {
+    border-bottom: 4px solid rgb(100, 100, 100);
+    border-left: 4px solid rgb(145, 145, 145);
+    border-right: 4px solid rgb(145, 145, 145);
 }
