@@ -48,12 +48,12 @@
         {% for post in posts %}
             <div class="post-abstract row">
                 <div class="col-sm-5 col-md-4 col-lg-3">
-                    <div class="post-cover" style="background-image:url({{ post.cover }}); background-size: cover; background-position: 50%">
+                    <div onclick="location.href='/blog/p/{{ post.uri }}/';" class="post-cover" style="background-image:url({{ post.cover }}); background-size: cover; background-position: 50%">
                     </div>
                 </div>
                 <div class="col-sm-7 col-md-8 col-lg-9">
                     <div class="post-title">
-                        <a href="/blog/p/post.uri/">{{ post.title }}</a>
+                        <a href="/blog/p/{{ post.uri }}/">{{ post.title }}</a>
                     </div>
                     <p>{{ post.abstract }} ...</p>
                 </div>
@@ -72,5 +72,6 @@
 <script src="/static/js/plugins.js"></script>
 <script src="/static/js/modernizr.js"></script>
 <script src="/static/js/header.js"></script>
+<script src="/static/js/posts.js"></script>
 </body>
 </html>

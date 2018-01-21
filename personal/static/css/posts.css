@@ -1,6 +1,6 @@
 .blog-area {
     background-image: url(/static/images/blog_bg.jpg);
-    padding: 40px 0 40px 0;
+    padding: 40px 0 150px 0;
 }
 
 .post-content {
@@ -23,6 +23,10 @@
     width: 180px;
     height: 180px;
     border: 7px solid rgb(242, 242, 242);
+}
+
+.post-cover:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 2000px) {
