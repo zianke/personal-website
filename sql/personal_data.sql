@@ -9,7 +9,8 @@ Chicago Symphony Orchestra @ Chicago Symphony Center。本以为NYPO招牌的铜
 Boston Symphony Orchestra @ Boston Symphony Hall。如果说Riccardo Muti与CSO正如日中天地稳坐美国交响乐团头把交椅，那么Andris Nelsons与BSO则是古典乐坛一颗冉冉升起的新星。这场的布鲁克纳第四交响曲，第二乐章Nelsons悠远绵长的演绎所营造出的虔诚与圣洁、第四乐章BSO辉煌灿烂的齐奏所展现出的庄严与崇高，即使在老一辈大师的录音中也不多见。在成为BSO总监的第三个年头便能达到如此高度，Nelsons的天赋可见一斑。然而以其对德奥作曲家的深刻理解，私以为欧洲才是他最好的归宿。如能在恩师Mariss Jansons隐退后继承其衣钵，同时执掌格万特豪斯与巴伐利亚广播交响乐团就再好不过了。因为在巴伐利亚有更浓厚的音乐底蕴，有更温暖的弦乐与更优美的木管，也有他最爱的瓦格纳与拜罗伊特音乐节，有最适合他施展才华的一片土壤。
 Philadelphia Orchestra @ Verizon Hall。同样作为新生代指挥中的佼佼者，Yannick Nézet-Séguin与费城管弦乐团的《西区故事》只能说差强人意。Yannick未尝不是一位优秀的指挥，他的莫扎特歌剧有着细腻的织体，门德尔松交响曲有着斑斓的色彩，只是这些录音都是与小编制室内乐团合作。而当乐团换成大编制的费城管弦，尤其是在这种美国本土作品专场中，观众们还是倾向于听到更硬朗一些的声音，以展现出伯恩斯坦作品中极富戏剧性与抒情性的一面。不过抛开指挥风格不谈，乐团本身的素质也乏善可陈。遥想Eugene Ormandy时期费城管弦乐团饱满的音色、自信的气场，如今已物是人非。进入21世纪后音乐总监换了一位又一位，然而皆因任期较短而鲜有作为。殊不知无论是费城的奥曼迪之声，还是芝加哥的索尔第音色，都是指挥家倾数十载光阴悉心打造出来的。如今费城既已将指挥棒交到年轻的Yannick手中，想必是对他寄予厚望，也期待他能给乐团打上属于自己的烙印。
 Cleveland Orchestra @ Severance Hall。说起指挥与乐团的黄金组合，就不得不提George Szell棒下的克里夫兰管弦乐团。Szell为克里夫兰留下的遗产不只有以贝多芬为代表的权威演绎，更有影响乐团数十年的严谨作风。克里夫兰管弦或许从来不是美国最优秀的交响乐团，但它一定是最务实的一个。在其百年历史中，从未有过像本世纪初费城、波士顿那样的低谷。如今在奥地利人Franz Welser-Möst的调教下，克里夫兰管弦乐团虽未继承Szell那种凌厉的风格，木管组却平添一份典雅，弦乐组的层次感也更上一层楼，而不变的是每个乐手极为扎实的基本功，以及对交响乐总谱每个细节孜孜不倦的挖掘。这场的苏格兰交响曲，演奏时所用的乐团编制往往是个难题，用大编制则二乐章略显浑浊，用小编制则末乐章稍逊气势，大概也只有像克里夫兰管弦这种大气而不失细腻的乐团才能奏出最完美的效果吧。
-当我们来到美国的大都市，往往会将当地的美术馆列入必去景点，却对这些历史悠久的音乐厅与交响乐团知之甚少。说实话同时作为这两种艺术的爱好者，我既不觉得音乐比美术浅薄，也不认为美术比音乐易懂。当我们走进美术馆欣赏从古希腊雕塑至印象派油画之美的同时，也请不要忘记经典艺术的另一个分支，古典音乐。更何况美国几乎所有音乐厅都会提供非常良心的学生票。在Hill Auditorium只需20刀便可坐在最好的位子，欣赏铃木雅明、佩拉希亚等一众即将来访的大师们的演出。同时也要安利一下那些美国本土名团。虽然Big Five总体而言不及上世纪六七十年代巅峰期的辉煌，但Andris Nelsons，Yannick Nézet-Séguin，Gustavo Dudamel等新锐指挥的涌现，也让我们对美国交响乐团的复兴充满期待。', '美国五大交响乐团巡礼', '2017-11-27 01:43:00');
+当我们来到美国的大都市，往往会将当地的美术馆列入必去景点，却对这些历史悠久的音乐厅与交响乐团知之甚少。说实话同时作为这两种艺术的爱好者，我既不觉得音乐比美术浅薄，也不认为美术比音乐易懂。当我们走进美术馆欣赏从古希腊雕塑至印象派油画之美的同时，也请不要忘记经典艺术的另一个分支，古典音乐。更何况美国几乎所有音乐厅都会提供非常良心的学生票。在Hill Auditorium只需20刀便可坐在最好的位子，欣赏铃木雅明、佩拉希亚等一众即将来访的大师们的演出。同时也要安利一下那些美国本土名团。虽然Big Five总体而言不及上世纪六七十年代巅峰期的辉煌，但Andris Nelsons，Yannick Nézet-Séguin，Gustavo Dudamel等新锐指挥的涌现，也让我们对美国交响乐团的复兴充满期待。',
+        '美国五大交响乐团巡礼', '2017-11-27 01:43:00');
 
 INSERT INTO photo (photo_id, filename, created)
 VALUES (1, '9820af54ee0f9cac71967e91b0db3c71378d445d1c12d8bff94cafd01f24e3f5.jpg', '2017-11-27 06:43:00'),
@@ -50,10 +51,11 @@ VALUES (1, 1),
 
 
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
-VALUES ('2', '5ea02a8015b2477d488dbce632d96d3c0a2390d7d86b153b13532b8a9c445769.jpg', 0, '法国哥特式教堂之旅',
+VALUES (2, '5ea02a8015b2477d488dbce632d96d3c0a2390d7d86b153b13532b8a9c445769.jpg', 0, '法国哥特式教堂之旅',
         '平安抵达上海，终于能有空整理一下这次在法国近乎疯狂的哥特式教堂之旅。早期至盛期哥特的杰作大都集中在以巴黎为中心方圆一百公里之内，这也使我得以在四天时间里辗转五座城市，相继造访了被认为是历史第一座哥特式建筑的圣丹尼斯大教堂，以及有法国四大哥特式教堂之称的沙特尔、兰斯、亚眠、博韦大教堂。',
         '平安抵达上海，终于能有空整理一下这次在法国近乎疯狂的哥特式教堂之旅。早期至盛期哥特的杰作大都集中在以巴黎为中心方圆一百公里之内，这也使我得以在四天时间里辗转五座城市，相继造访了被认为是历史第一座哥特式建筑的圣丹尼斯大教堂，以及有法国四大哥特式教堂之称的沙特尔、兰斯、亚眠、博韦大教堂。圣丹尼斯绚烂的彩色玻璃、沙特尔厚重的飞扶壁、兰斯精雕细琢的立面、亚眠高耸的中殿拱顶、博韦壮阔的翼殿大门，共同书写了哥特式风格从萌芽到鼎盛的建筑史。这些教堂看得越多，就越发感叹中世纪并不完全是所谓的“黑暗时代”，相反它是建筑史上一个辉煌的高峰；法国也并不总是一个浪漫的国度，相反它在建筑尤其是哥特式及古典主义上是极为严谨理性的；而抛开建筑美学上的意义，这些教堂刺破穹苍的尖顶，倒并不能让信徒们更接近上帝，也并不能实现主教们倾尽全力试图建立起一座座“新耶路撒冷”的愿望，相反却让中世纪日趋腐败的教会与真正的圣城渐行渐远……
-至此，为期36天的欧洲七国文化苦旅总算是告一段落了。庆幸自己能顺利走完这个密度爆表还特别烧脑的行程，也庆幸自己能在19岁这样一个大脑黄金期将欧洲艺术人文中最精华的部分领略了一遍。也许今后还将第四次、第五次来到欧洲，但也许再也不会有如此旺盛的好奇心和天天逼着自己早出晚归的意志力了。当然对艺术的探索永无止境，今后还更需学会如何耐得住寂寞，毕竟这种既能随时随地亲临美术真迹与顶级音乐厅，又能随走随写随发朋友圈分享心得的机会是可遇而不可求的，艺术终究还是需要静下心来独自欣赏的。', '法国哥特式教堂之旅', '2017-02-07 10:21:00');
+至此，为期36天的欧洲七国文化苦旅总算是告一段落了。庆幸自己能顺利走完这个密度爆表还特别烧脑的行程，也庆幸自己能在19岁这样一个大脑黄金期将欧洲艺术人文中最精华的部分领略了一遍。也许今后还将第四次、第五次来到欧洲，但也许再也不会有如此旺盛的好奇心和天天逼着自己早出晚归的意志力了。当然对艺术的探索永无止境，今后还更需学会如何耐得住寂寞，毕竟这种既能随时随地亲临美术真迹与顶级音乐厅，又能随走随写随发朋友圈分享心得的机会是可遇而不可求的，艺术终究还是需要静下心来独自欣赏的。',
+        '法国哥特式教堂之旅', '2017-02-07 10:21:00');
 
 INSERT INTO photo (photo_id, filename, created)
 VALUES (17, '5f7d817d06a814f3abae6d9a22bed473ab3e2f7ec76b5b4ffe3f6572f100c698.jpg', '2017-02-07 10:21:00'),
@@ -116,7 +118,7 @@ VALUES (2, 17),
   (2, 44);
 
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
-VALUES ('3', '5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c1.png', 1, 'Online Appraisal System',
+VALUES (3, '5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c1.png', 1, 'Online Appraisal System',
         'This Online Appraisal System is developed for an executive at Huawei Technologies Co., Ltd. It enables employers to send questionnaires and give appraisals to their employees. The website also sells well-designed questionnaires to employers. Technology Stack: jQuery, Bootstrap, CodeIgniter, LAMP',
         'Time: April 2017 - December 2017. Position: Leader of project team.
 This Online Appraisal System is developed for an executive at Huawei Technologies Co., Ltd. It implements the following functions:
@@ -142,7 +144,7 @@ VALUES (3, 45),
   (3, 48);
 
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
-VALUES ('4', 'eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847e.jpg', 1, 'UM-CSSA Rate My Professor',
+VALUES (4, 'eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847e.jpg', 1, 'UM-CSSA Rate My Professor',
         'Rate My Professor is one of the apps on the official website of UM-CSSA. It enables students of UM to give comments to their professors. The comments can be searched by other students and will benefit them during course selection. Technology Stack: React, Flask, SQLite, NPM, Nginx',
         'Time: January 2018 – Present. Position: Leader of project team
 Rate My Professor is one of the apps on the official website of the University of Michigan Chinese Students and Scholars Association (UM-CSSA). It will implement the following functions:
@@ -158,3 +160,24 @@ VALUES (49, 'eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847e.jp
 
 INSERT INTO photo_display (post_id, photo_id)
 VALUES (4, 49);
+
+INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
+VALUES (5, 'a6c8578b85bb89491378d17d4fdaccb7799dd3e08bc40d83d218d22cc264ecb9.png', 1, 'Personal Website',
+        'The website you are now visiting is developed by myself. It records my life stories and project experiences. You can learn a lot about my skills and hobbies through it. Technology Stack: jQuery, Bootstrap, Flask, SQLite, Nginx',
+        'Time: January 2018 – Present.
+The website you are now visiting, <a target="_blank" href="http://kezian.me/">kezian.me</a>, is developed by myself. It records my life stories and project experiences. You can learn a lot about my skills and hobbies through it.
+Technology Stack: jQuery, Bootstrap, Flask, SQLite, Nginx.', 'personal-website',
+        '2018-01-18 23:41:00');
+
+INSERT INTO photo (photo_id, filename, created)
+VALUES (50, 'a6c8578b85bb89491378d17d4fdaccb7799dd3e08bc40d83d218d22cc264ecb9.png', '2018-01-18 23:41:00'),
+  (51, '8ff1225b6fc814af105e47bcf0fe441fb74da5333e6e0953dc430af3e702fb59.png', '2018-01-18 23:41:00'),
+  (52, 'd12c7b75bb25dc8ab81da0dccaf865c81d9ac8351c8dd64858f11a8de4721395.png', '2018-01-18 23:41:00'),
+  (53, '0db592dcb71d3d518288e9b6af5c6d34468a1e0e8cc1410e34ecf562030aeee1.png', '2018-01-18 23:41:00');
+
+
+INSERT INTO photo_display (post_id, photo_id)
+VALUES (5, 50),
+  (5, 51),
+  (5, 52),
+  (5, 53);

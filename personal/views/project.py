@@ -10,5 +10,5 @@ def project(uri):
     context = personal.model.get_project(uri)
     if not context:
         flask.abort(404)
-    context['active'] = 'project'
+    context['active'] = 'projects'
     return flask.render_template("post.html", **context)
