@@ -119,7 +119,14 @@ VALUES (2, 17),
 
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
 VALUES ('3', '5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c1.png', 1, 'Online Appraisal System',
-        'Online Appraisal System Abstract', 'Online Appraisal System Description', 'online-appraisal-system',
+        'This Online Appraisal System is developed for an executive at Huawei Technologies Co., Ltd. It enables employers to send questionnaires and give appraisals to their employees. The website also sells well-designed questionnaires to employers. Technology Stack: jQuery, Bootstrap, CodeIgniter, LAMP', 'April 2017 - December 2017
+This Online Appraisal System is developed for an executive at Huawei Technologies Co., Ltd. It implements the following functions:
+1.	Admins create questionnaires and sell them to employers.
+2.	Employers purchase questionnaires from our online market, and send them to employees.
+3.	Employees receive an email including the URL of questionnaire, then fill in the questionnaire and submit.
+4.	The system automatically or manually give appraisals to employees and send feedbacks to employers by email.
+The website is currently under test and will soon be launched. You can have a glance at it on <a href="http://101.132.34.149/ce-ping/src/index.php/login">http://101.132.34.149/ce-ping/src/index.php/login</a> with “test” as username and “testonly” as password. Notice that the server is for test only. Please do not make any purchase on the website.
+Technology Stack: jQuery, Bootstrap, CodeIgniter, LAMP.', 'online-appraisal-system',
         '2018-01-25 18:03:00');
 
 INSERT INTO photo (photo_id, filename, created)
