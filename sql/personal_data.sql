@@ -120,7 +120,7 @@ VALUES (2, 17),
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
 VALUES (3, '5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c1.png', 1, 'Online Appraisal System',
         'This Online Appraisal System is developed for an executive at Huawei Technologies Co., Ltd. It enables employers to send questionnaires and give appraisals to their employees. The website also sells well-designed questionnaires to employers. Technology Stack: jQuery, Bootstrap, CodeIgniter, LAMP',
-        'Time: April 2017 - December 2017. Position: Leader of project team.
+        'Time: April 2017 - December 2017. Position: Leader of project team, Full-stack developer.
 This Online Appraisal System is developed for an executive at Huawei Technologies Co., Ltd. It implements the following functions:
 1. Admins create questionnaires and sell them to employers.
 2. Employers purchase questionnaires from our online market, and send them to employees.
@@ -146,7 +146,7 @@ VALUES (3, 45),
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
 VALUES (4, 'eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847e.jpg', 1, 'UM-CSSA Rate My Professor',
         'Rate My Professor is one of the apps on the official website of UM-CSSA. It enables students of UM to give comments to their professors. The comments can be searched by other students and will benefit them during course selection. Technology Stack: React, Flask, SQLite, NPM, Nginx',
-        'Time: January 2018 – Present. Position: Leader of project team
+        'Time: January 2018 – Present. Position: Leader of project team, Full-stack developer.
 Rate My Professor is one of the apps on the official website of the University of Michigan Chinese Students and Scholars Association (UM-CSSA). It will implement the following functions:
 1. Students of UM can give comments to their professors, as well as the rate of course workload, degree of difficulty, etc.
 2. Other students can search the comments by course name, professor name, workload, difficulty, etc. This will benefit them, especially freshmen, during course selection.
@@ -181,3 +181,21 @@ VALUES (5, 50),
   (5, 51),
   (5, 52),
   (5, 53);
+
+INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
+VALUES (6, '1f4712292bdf90508985989607cbe99997310d8486e8c491e706974a82848fa9.png', 1, 'UM-SJTU JI TA Recruitment System',
+        'This Teaching Assistant Recruitment System is developed for UM-SJTU Joint Institute. It enables students to submit applications for teaching assistants and professors to process the applications. Technology Stack: jQuery, CodeIgniter, MySQL',
+        'Time: February 2016 - October 2016. Position: Full-stack developer.
+This Teaching Assistant Recruitment System is developed for the University of Michigan – Shanghai Jiao Tong University Joint Institute. It implements the following functions:
+1. Students of UM-SJTU JI can submit applications for teaching assistants by filling in a table including their personal information and reason for application.
+2. Professors can accept or reject the applications. They can also choose a time to interview the students.
+Technology Stack: jQuery, CodeIgniter, MySQL.',
+        'um-sjtu-ji-ta-recruitment-system',
+        '2016-10-31 00:00:00');
+
+INSERT INTO photo (photo_id, filename, created)
+VALUES (54, '1f4712292bdf90508985989607cbe99997310d8486e8c491e706974a82848fa9.png', '2016-10-31 00:00:00');
+
+
+INSERT INTO photo_display (post_id, photo_id)
+VALUES (6, 54);

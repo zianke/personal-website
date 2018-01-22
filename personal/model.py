@@ -107,7 +107,7 @@ def get_project(uri):
     return post
 
 def get_projects():
-    cur = get_db().execute("SELECT * FROM post WHERE is_project = 1 ORDER BY created DESC")
+    cur = get_db().execute("SELECT * FROM post WHERE is_project = 1")
     posts = cur.fetchall()
     for post in posts:
         post['cover'] = expand_filename(post['cover'])
