@@ -151,7 +151,9 @@ Rate My Professor is one of the apps on the official website of the University o
 1. Students of UM can give comments to their professors, as well as the rate of course workload, degree of difficulty, etc.
 2. Other students can search the comments by course name, professor name, workload, difficulty, etc. This will benefit them, especially freshmen, during course selection.
 The website of CSSA Apps is <a target="_blank" href="http://app.um-cssa.org/">http://app.um-cssa.org/</a>. This project has just started, and will be completed by the end of March 2018. If you are a student at the University of Michigan and desire to serve your schoolmates, welcome to <a href="mailto:email@kezian.me">email me</a> and join our development team.
-Technology Stack: React, Flask, SQLite, NPM, Nginx.', 'um-cssa-rate-my-professor',
+Technology Stack: React, Flask, SQLite, NPM, Nginx.
+Source Code: <a target="_blank" href="https://github.com/zianke/umcssa-rate-my-professor">https://github.com/zianke/umcssa-rate-my-professor</a>',
+        'um-cssa-rate-my-professor',
         '2018-01-20 23:35:00');
 
 INSERT INTO photo (photo_id, filename, created)
@@ -166,7 +168,9 @@ VALUES (5, 'a6c8578b85bb89491378d17d4fdaccb7799dd3e08bc40d83d218d22cc264ecb9.png
         'The website you are now visiting is developed by myself. It records my life stories and project experiences. You can learn a lot about my skills and hobbies through it. Technology Stack: jQuery, Bootstrap, Flask, SQLite, Nginx',
         'Time: January 2018 – Present.
 The website you are now visiting, <a target="_blank" href="http://kezian.me/">kezian.me</a>, is developed by myself. It records my life stories and project experiences. You can learn a lot about my skills and hobbies through it.
-Technology Stack: jQuery, Bootstrap, Flask, SQLite, Nginx.', 'personal-website',
+Technology Stack: jQuery, Bootstrap, Flask, SQLite, Nginx.
+Source Code: <a target="_blank" href="https://github.com/zianke/personal-website">https://github.com/zianke/personal-website</a>',
+        'personal-website',
         '2018-01-18 23:41:00');
 
 INSERT INTO photo (photo_id, filename, created)
@@ -202,9 +206,14 @@ VALUES (6, 54);
 
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
 VALUES
-  (7, 'e06b79ac7652cf615036cca35f7447d8a432f5c780fd8e009077180dfce283b2.png', 1, 'Baverage Serving Robot',
-   'Abstract', 'Description',
-   'baverage-serving-robot',
+  (7, 'e06b79ac7652cf615036cca35f7447d8a432f5c780fd8e009077180dfce283b2.png', 1, 'Beverage Serving Robot',
+   'Beverage Serving Robot is a robot that can automatically add beverage for guests, controlled by an Android app. It wins the Best Innovation Award at UM-SJTU Joint Institute 2016 Summer Design Expo. Technology Stack: Arduino, Android',
+   'Time: May 2016 - August 2016. Position: Leader of project team, Arduino programmer, Android app developer.
+Beverage Serving Robot is a robot that can automatically add beverage for guests. It’s programmed in Arduino and controlled by an Android app through a Bluetooth module. The mechanical arm is 3D printed.
+User can either specify a cup to be filled by clicking the corresponding button on the Android app, or choose the “Automatic Mode”, which lets the robot automatically refill any cup on the table.
+Beverage Serving Robot wins the Best Innovation Award at UM-SJTU Joint Institute 2016 Summer Design Expo.
+Technology Stack: Arduino, Android.',
+   'beverage-serving-robot',
    '2016-08-03 03:43:00');
 
 INSERT INTO photo (photo_id, filename, created)
@@ -222,3 +231,37 @@ VALUES (1, '4ce85e27722f10ac2a608068def1086e52eea5ff0fa3814516ae4f625f9d2d74.mp4
 
 INSERT INTO video_display (post_id, video_id)
 VALUES (7, 1);
+
+INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
+VALUES
+  (8, '301bee2d4a0cb44d2e27309936021311e4a7a40fb5ce14f4ec63805f44cbc6ec.jpg', 1, 'Classical Music in SHS',
+   'Classical Music in SHS is a CPS project conducted at Shanghai High School. It aims at popularizing classical music, by means of school broadcast, lectures and apps. It wins the Best Service Award at Shanghai High School 2014 CPS Award Ceremony',
+   'Time: October 2012 - May 2014. Position: Leader of project team, Speaker of classical music lectures.
+Classical Music in SHS is a CPS project conducted at Shanghai High School. It aims at popularizing classical music. We carried out the following activities:
+1. Produced two school broadcast programs focusing on Bach, Mozart and Beethoven.
+2. Held two classical music lectures introducing world famous pieces of classical music.,
+3. Developed iOS and Windows app, which contains 125 pieces of classical music, each with detailed introduction.
+Classical Music in SHS wins the Best Service Award at Shanghai High School 2014 CPS Award Ceremony.
+Download Apps: <a target="_blank" href="https://itunes.apple.com/US/app/id871706143?mt=8">iOS</a>, <a target="_blank" href="https://pan.baidu.com/s/1mj39uvY">Windows</a>',
+   'classical-music-in-shs',
+   '2014-05-28 00:00:00');
+
+INSERT INTO photo (photo_id, filename, created)
+VALUES (58, '301bee2d4a0cb44d2e27309936021311e4a7a40fb5ce14f4ec63805f44cbc6ec.jpg', '2014-05-28 00:00:00'),
+  (59, '2f9db0172929b90ae637919deaa934ef441f01c8e10d72466bb52974816f165c.jpg', '2014-05-28 00:00:00'),
+  (60, '7abb42c6527d4634e2fa52c532bdfbb43da46640c9a3ce986503d18aed212ea6.jpg', '2014-05-28 00:00:00'),
+  (61, 'b7f43e00be9a18ad69aae903829dce7d3b4a2b9a095bc473dd4338eed10dd540.jpg', '2014-05-28 00:00:00'),
+  (62, '886bc503ad3b44aa1fa5ca0d1997dcdcf001982a871974215540841385e0f443.jpg', '2014-05-28 00:00:00');
+
+INSERT INTO photo_display (post_id, photo_id)
+VALUES (8, 58),
+  (8, 59),
+  (8, 60),
+  (8, 61),
+  (8, 62);
+
+INSERT INTO video (video_id, filename, created)
+VALUES (2, '92274635052be3e28f262ffc300e9e331fb6bfa4babd80ee6844153588ac2bd3.mp4', '2014-05-28 00:00:00');
+
+INSERT INTO video_display (post_id, video_id)
+VALUES (8, 2);

@@ -4,6 +4,7 @@
 
 .carousel {
 	width: 80%;
+	max-width: 1000px;
 	margin: auto;
 }
 .item, .active, .carousel-inner {
