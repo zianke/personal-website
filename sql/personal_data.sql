@@ -237,7 +237,7 @@ VALUES
   (8, '301bee2d4a0cb44d2e27309936021311e4a7a40fb5ce14f4ec63805f44cbc6ec.jpg', 1, 'Classical Music in SHS',
    'Classical Music in SHS is a CPS project conducted at Shanghai High School. It aims at popularizing classical music, by means of school broadcast, lectures and apps. It wins the Best Service Award at Shanghai High School 2014 CPS Award Ceremony',
    'Time: October 2012 - May 2014. Position: Leader of project team, Speaker of classical music lectures.
-Classical Music in SHS is a CPS project conducted at Shanghai High School. It aims at popularizing classical music. We carried out the following activities:
+Classical Music in SHS is a CPS (Creativity, Practice, Service) project conducted at Shanghai High School. It aims at popularizing classical music. We carried out the following activities:
 1. Produced two school broadcast programs focusing on Bach, Mozart and Beethoven.
 2. Held two classical music lectures introducing world famous pieces of classical music.,
 3. Developed iOS and Windows app, which contains 125 pieces of classical music, each with detailed introduction.
