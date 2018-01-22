@@ -116,3 +116,21 @@ VALUES (2, 17),
   (2, 42),
   (2, 43),
   (2, 44);
+
+INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
+VALUES ('3', '5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c1.png', 1, 'Online Appraisal System',
+        'Online Appraisal System Abstract', 'Online Appraisal System Description', 'online-appraisal-system',
+        '2018-01-25 18:03:00');
+
+INSERT INTO photo (photo_id, filename, created)
+VALUES (45, '9f44bc62c5cf49395723e3ce4a5a795141b73c5de6f815296bc16a6da05fd12b.png', '2018-01-25 18:03:00'),
+  (46, 'c425814ddecc8a641c1cb59d83cbb0a3e824ceda314b328c1021b0a724357c95.png', '2018-01-25 18:03:00'),
+  (47, '5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c1.png', '2018-01-25 18:03:00'),
+  (48, '0e1226944e72a657505492c091fe852f38cc0c4ce227da7aa13acd725e447184.png', '2018-01-25 18:03:00');
+
+
+INSERT INTO photo_display (post_id, photo_id)
+VALUES (3, 45),
+  (3, 46),
+  (3, 47),
+  (3, 48);

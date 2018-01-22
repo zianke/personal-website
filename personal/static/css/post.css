@@ -17,8 +17,9 @@
 }
 
 .carousel-inner {
-    border-top: 4px solid rgb(100, 100, 100);
-    border-bottom: 4px solid rgb(100, 100, 100);
-    border-left: 4px solid rgb(145, 145, 145);
-    border-right: 4px solid rgb(145, 145, 145);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 3px 3px #888;
+    -webkit-box-shadow: 0 0 3px 3px #888;
+    box-shadow: 0 0 3px 3px #888;
 }

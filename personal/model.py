@@ -51,8 +51,10 @@ def expand_filename(filename):
 
 
 def get_post(uri):
-    cur = get_db().execute("SELECT * FROM post WHERE uri='{}'".format(uri))
+    cur = get_db().execute("SELECT * FROM post WHERE uri='{}' AND is_project = 0".format(uri))
     post = cur.fetchone()
+    if not post:
+        return False
     cur = get_db().execute(
         "SELECT photo.* FROM photo_display, photo WHERE post_id = {} AND photo_display.photo_id=photo.photo_id".format(
             post['post_id']))
@@ -71,7 +73,41 @@ def get_post(uri):
 
 
 def get_posts():
-    cur = get_db().execute("SELECT * FROM post ORDER BY created DESC")
+    cur = get_db().execute("SELECT * FROM post WHERE is_project = 0 ORDER BY created DESC")
+    posts = cur.fetchall()
+    for post in posts:
+        post['cover'] = expand_filename(post['cover'])
+        if len(post['abstract']) == 0:
+            if len(post['text']) < 200:
+                post['abstract'] = post['text']
+            else:
+                post['abstract'] = post['text'][:200]
+    cur.close()
+    return posts
+
+def get_project(uri):
+    cur = get_db().execute("SELECT * FROM post WHERE uri='{}' and is_project = 1".format(uri))
+    post = cur.fetchone()
+    if not post:
+        return False
+    cur = get_db().execute(
+        "SELECT photo.* FROM photo_display, photo WHERE post_id = {} AND photo_display.photo_id=photo.photo_id".format(
+            post['post_id']))
+    post['photos'] = cur.fetchall()
+    for photo in post['photos']:
+        photo['filename'] = expand_filename(photo['filename'])
+    cur = get_db().execute(
+        "SELECT video.* FROM video_display,video WHERE post_id = {} AND video_display.video_id=video.video_id".format(
+            post['post_id']))
+    post['videos'] = cur.fetchall()
+    for video in post['videos']:
+        video['filename'] = expand_filename(video['filename'])
+    post['paragraphs'] = str(post['text']).split('\n')
+    cur.close()
+    return post
+
+def get_projects():
+    cur = get_db().execute("SELECT * FROM post WHERE is_project = 1 ORDER BY created DESC")
     posts = cur.fetchall()
     for post in posts:
         post['cover'] = expand_filename(post['cover'])
