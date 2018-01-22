@@ -23,3 +23,14 @@
     -webkit-box-shadow: 0 0 3px 3px #888;
     box-shadow: 0 0 3px 3px #888;
 }
+
+.blog-area video {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 80%;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 3px 3px #888;
+    -webkit-box-shadow: 0 0 3px 3px #888;
+    box-shadow: 0 0 3px 3px #888;
+}

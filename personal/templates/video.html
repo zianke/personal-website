@@ -44,18 +44,9 @@
 {% include 'header.html' %}
 
 <div class="blog-area">
-    {% include 'carousel.html' %}
-    {% for video in videos %}
-        <video controls>
-            <source src="{{ video.filename }}" type="video/mp4">
-        </video>
-    {% endfor %}
-    <div class="post-content">
-        <h1>{{ title }}</h1>
-        {% for paragraph in paragraphs %}
-            <p>{{ paragraph|safe }}</p>
-        {% endfor %}
-    </div>
+    <video controls style="display: block;margin: 0 auto">
+        <source src="{{ filename }}" type="video/mp4">
+    </video>
 </div>
 
 <div class="scrollup">

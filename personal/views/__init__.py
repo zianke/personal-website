@@ -6,3 +6,4 @@ from personal.views.post import post
 from personal.views.posts import posts
 from personal.views.project import project
 from personal.views.projects import projects
+from personal.views.video import video

@@ -183,19 +183,42 @@ VALUES (5, 50),
   (5, 53);
 
 INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
-VALUES (6, '1f4712292bdf90508985989607cbe99997310d8486e8c491e706974a82848fa9.png', 1, 'UM-SJTU JI TA Recruitment System',
-        'This Teaching Assistant Recruitment System is developed for UM-SJTU Joint Institute. It enables students to submit applications for teaching assistants and professors to process the applications. Technology Stack: jQuery, CodeIgniter, MySQL',
-        'Time: February 2016 - October 2016. Position: Full-stack developer.
+VALUES
+  (6, '1f4712292bdf90508985989607cbe99997310d8486e8c491e706974a82848fa9.png', 1, 'UM-SJTU JI TA Recruitment System',
+   'This Teaching Assistant Recruitment System is developed for UM-SJTU Joint Institute. It enables students to submit applications for teaching assistants and professors to process the applications. Technology Stack: jQuery, CodeIgniter, MySQL',
+   'Time: February 2016 - October 2016. Position: Full-stack developer.
 This Teaching Assistant Recruitment System is developed for the University of Michigan – Shanghai Jiao Tong University Joint Institute. It implements the following functions:
 1. Students of UM-SJTU JI can submit applications for teaching assistants by filling in a table including their personal information and reason for application.
 2. Professors can accept or reject the applications. They can also choose a time to interview the students.
 Technology Stack: jQuery, CodeIgniter, MySQL.',
-        'um-sjtu-ji-ta-recruitment-system',
-        '2016-10-31 00:00:00');
+   'um-sjtu-ji-ta-recruitment-system',
+   '2016-10-31 00:00:00');
 
 INSERT INTO photo (photo_id, filename, created)
 VALUES (54, '1f4712292bdf90508985989607cbe99997310d8486e8c491e706974a82848fa9.png', '2016-10-31 00:00:00');
 
-
 INSERT INTO photo_display (post_id, photo_id)
 VALUES (6, 54);
+
+INSERT INTO post (post_id, cover, is_project, title, abstract, text, uri, created)
+VALUES
+  (7, 'e06b79ac7652cf615036cca35f7447d8a432f5c780fd8e009077180dfce283b2.png', 1, 'Baverage Serving Robot',
+   'Abstract', 'Description',
+   'baverage-serving-robot',
+   '2016-08-03 03:43:00');
+
+INSERT INTO photo (photo_id, filename, created)
+VALUES (55, 'e06b79ac7652cf615036cca35f7447d8a432f5c780fd8e009077180dfce283b2.png', '2016-08-03 03:43:00'),
+  (56, '76c38f2478c892f16472ba3fa50dd94ec215ab49369dae7f60ba58e78edc0bd1.png', '2016-08-03 03:43:00'),
+  (57, 'a02ead871ef248734825ae967920c09dd334600d1c181358b53f7423ff76e505.jpg', '2016-08-03 03:43:00');
+
+INSERT INTO photo_display (post_id, photo_id)
+VALUES (7, 55),
+  (7, 56),
+  (7, 57);
+
+INSERT INTO video (video_id, filename, created)
+VALUES (1, '4ce85e27722f10ac2a608068def1086e52eea5ff0fa3814516ae4f625f9d2d74.mp4', '2016-08-03 03:43:00');
+
+INSERT INTO video_display (post_id, video_id)
+VALUES (7, 1);
