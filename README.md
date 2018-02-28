@@ -1,4 +1,4 @@
-# personal-website
+# v1.kezian.me
 Personal website of Zian Ke
 <br />
-kezian.me
+Currently rewriting it using MERN stack. The new version is on kezian.me
