@@ -1,5 +1,22 @@
+html {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 body {
     overflow: hidden;
+    margin: 0;
 }
 
 /* Preloader */
@@ -52,20 +69,20 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 200px;
+    width: 10rem;
     background-color: #1a1b1c;
 }
 
 .name-div {
-    width: 120px;
+    width: 6rem;
     position: absolute;
-    top: 50px;
-    left: 40px;
+    top: 2.5rem;
+    left: 2rem;
     z-index: 10;
 }
 
 .name {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
     color: #ffffff;
@@ -82,7 +99,7 @@ body {
 .name hr {
     border: solid #ffffff;
     border-width: 2px 0 0 0;
-    margin-top: 13px;
+    margin-top: 0.65rem;
 }
 
 .first-name span {
@@ -98,18 +115,18 @@ body {
 .navs-div {
     position: absolute;
     top: 50%;
-    left: 40px;
+    left: 2rem;
     transform: translate(0, -50%);
 }
 
 .navs {
     display: block;
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 2px;
     color: #95938c;
     text-decoration: none;
-    margin: 6px 0;
+    margin: 0.3rem 0;
     transition: color .25s;
 }
 
@@ -125,7 +142,74 @@ body {
 .navbar-triangle {
     position: absolute;
     top: 0;
-    left: 200px;
+    left: 10rem;
+}
+
+.navbar-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.5rem;
+    background-color: #1a1b1c;
+}
+
+@media screen and (max-width: 768px) {
+    .name-div {
+        width: 6rem;
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translate(0, -50%);
+        z-index: 10;
+    }
+}
+
+.navbar-toggle {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(0, -50%);
+}
+
+.navbar-toggle-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 2px;
+    width: 100%;
+    transition: all .25s;
+}
+
+#navbar-toggle-1 {
+    top: 3px;
+}
+
+#navbar-toggle-2 {
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+
+#navbar-toggle-3 {
+    bottom: 3px;
+}
+
+.navbar-toggle-cancel #navbar-toggle-1 {
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.navbar-toggle-cancel #navbar-toggle-2 {
+    opacity: 0;
+}
+
+.navbar-toggle-cancel #navbar-toggle-3 {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
 }
 
 /* Common */

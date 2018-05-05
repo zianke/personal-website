@@ -7,4 +7,8 @@ $(window).on('load', function () { // makes sure the whole site is loaded
 $(document).ready(function () {
     $('.navs-div a[href="' + window.location.pathname + '"').addClass('navs-active')
         .prepend('<span style="display: inline-block; transform: scale(2,1)">—&nbsp;</span>');
+
+    $('.navbar-toggle').click(function () {
+        $(this).toggleClass('navbar-toggle-cancel');
+    });
 });
