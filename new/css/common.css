@@ -109,12 +109,17 @@ body {
     letter-spacing: 2px;
     color: #95938c;
     text-decoration: none;
-    margin: 5px 0;
+    margin: 6px 0;
     transition: color .25s;
 }
 
 .navs:hover {
     color: #ffffff;
+}
+
+.navs-active {
+    color: #ffffff;
+    padding-left: 10px;
 }
 
 .navbar-triangle {
