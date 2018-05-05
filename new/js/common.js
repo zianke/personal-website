@@ -10,5 +10,6 @@ $(document).ready(function () {
 
     $('.navbar-toggle').click(function () {
         $(this).toggleClass('navbar-toggle-cancel');
+        $('.full-screen-container').fadeToggle(250);
     });
 });
