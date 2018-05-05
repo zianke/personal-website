@@ -58,7 +58,10 @@ body {
 
 .name-div {
     width: 120px;
-    margin: 50px 0 0 40px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    z-index: 10;
 }
 
 .name {
@@ -94,16 +97,18 @@ body {
 
 .navs-div {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 40px;
     transform: translate(0, -50%);
 }
 
 .navs {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 2px;
     color: #95938c;
+    text-decoration: none;
     margin: 5px 0;
     transition: color .25s;
 }
