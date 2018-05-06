@@ -16,7 +16,6 @@ $(document).ready(function () {
         if (!autoScrolling) {
             clearInterval(timer);
             var currentScrollTop = $(document).scrollTop();
-            console.log(prevScrollTop + ' ' + currentScrollTop);
             timer = setTimeout(scrollToElement, 100, prevScrollTop, currentScrollTop);
             prevScrollTop = currentScrollTop;
         }
@@ -25,7 +24,6 @@ $(document).ready(function () {
 
 function scrollToElement(prevScrollTop, currentScrollTop) {
     $('.navs').removeClass('navs-active');
-    console.log(': ' + prevScrollTop + ' ' + currentScrollTop);
     var scrollTopId = nextScrollTopId(prevScrollTop, currentScrollTop);
     autoScrolling = true;
     $('html, body').stop().animate({
