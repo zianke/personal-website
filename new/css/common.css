@@ -140,13 +140,12 @@ body {
     transition: color .25s;
 }
 
-.navs:hover {
+.navs-hover:hover {
     color: #ffffff;
 }
 
 .navs-active {
     color: #ffffff;
-    padding-left: 10px;
 }
 
 .navbar-triangle {
@@ -245,6 +244,7 @@ body {
     .navs-div {
         text-align: center;
     }
+
     .navs {
         display: block;
         font-size: 1rem;
