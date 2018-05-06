@@ -1,6 +1,7 @@
 var autoScrolling = false;
 
 $(document).ready(function () {
+    /* Scroll guide */
     $('.navs').removeClass('navs-hover');
     $('.navs').hover(function () {
         autoScrolling = false;
@@ -22,6 +23,7 @@ $(document).ready(function () {
     });
 });
 
+/* Scroll helper functions */
 function scrollToElement(prevScrollTop, currentScrollTop) {
     $('.navs').removeClass('navs-active');
     var scrollTopId = nextScrollTopId(prevScrollTop, currentScrollTop);
