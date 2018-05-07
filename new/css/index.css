@@ -30,8 +30,44 @@
 }
 
 #home .mask {
+    position: relative;
     height: 100%;
     background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 90%);
+}
+
+#home .home-buttons {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+#home .home-buttons table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 25px;
+}
+
+#home hr {
+    border: none;
+    height: 1px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+#home .home-button {
+    border: 2px solid #ffffff;
+    height: 2rem;
+    line-height: 2rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#home .home-button:hover {
+    background-color: #ffffff;
+    color: #131416;
 }
 
 #biography .index-section-container {
@@ -85,7 +121,7 @@
 
 #projects ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: rgba(100, 100, 100, 0.5);
+    background: rgba(200, 200, 200, 0.3);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
 }
 
@@ -198,6 +234,7 @@
     height: 8rem;
     text-align: center;
     white-space: normal;
+    color: #131416;
 }
 
 .img-card-content .center-child {

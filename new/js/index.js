@@ -22,6 +22,17 @@ $(document).ready(function () {
         }
     });
 
+    /* Home Buttons */
+    $('#about').click(function () {
+        $('html, body').stop().animate({
+            scrollTop: $('#biography').offset().top
+        }, 500);
+    });
+
+    $('#resume').click(function () {
+        window.location.href = "/resume/";
+    });
+
     /* Text Card */
     $('.text-card').hover(function () {
         $(this).find('.more').stop().animate({'opacity': 1, 'margin-top': '3rem'}, 400);

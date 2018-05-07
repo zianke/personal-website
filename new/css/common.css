@@ -283,3 +283,21 @@ body {
     top: 50%;
     transform: translate(0, -50%);
 }
+
+.display-on-large {
+    display: block;
+}
+
+.display-on-small {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .display-on-large {
+        display: none;
+    }
+
+    .display-on-small {
+        display: block;
+    }
+}
