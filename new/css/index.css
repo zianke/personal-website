@@ -64,7 +64,6 @@
 /* Text Card */
 .text-card {
     display: block;
-    height: 10rem;
     width: 80%;
     margin: 2rem auto;
     background-color: rgba(0, 0, 0, 0);
@@ -75,6 +74,18 @@
 
 .text-card:hover {
     background-color: rgba(255, 255, 255, 1);
+}
+
+#computer-skills {
+    height: 25%;
+}
+
+#education {
+    height: 15%;
+}
+
+#work-experience {
+    height: 25%;
 }
 
 .text-card h1 {
@@ -88,6 +99,8 @@
 }
 
 .text-card p {
+    width: 100%;
+    margin-left: -1rem;
     font-size: 0.9rem;
     font-weight: 300;
     color: #131416;
@@ -105,6 +118,8 @@
 }
 
 .text-card .more {
+    width: 100%;
+    margin-left: -1rem;
     text-align: center;
     font-size: 0.7rem;
     font-weight: 600;
