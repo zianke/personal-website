@@ -41,23 +41,60 @@
 
 #biography .sections {
     width: 100%;
+    max-height: 100%;
 }
 
 #projects .index-section-container {
     height: 100%;
-    background-color: #e6e5df;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/projects.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: relative;
 }
 
 #projects .img-cards-container {
-    max-width: 100%;
-    background-color: #5e5e5e;
+    max-width: calc(100% - 50px);
+    background-color: rgba(0, 0, 0, 0);
     overflow-x: auto;
     white-space: nowrap;
+    padding-left: 50px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    #projects .img-cards-container {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+#projects ::-webkit-scrollbar {
+    width: 12px;
+}
+
+#projects ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#projects ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(100, 100, 100, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
 }
 
 #blog .index-section-container {
     height: 100%;
-    background-color: #2b542c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/blog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #contact .index-section-container {
@@ -169,4 +206,30 @@
 
 .img-card-content .keywords {
     font-size: 0.8rem;
+}
+
+@media screen and (max-height: 576px) {
+    .img-card-container {
+        height: 15rem;
+    }
+
+    .img-card {
+        width: 8rem;
+        height: 12rem;
+        margin-top: 3rem;
+    }
+
+    .img-card-content {
+        width: 8rem;
+        height: 4rem;
+    }
+
+    .img-card-content p {
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    .img-card-content .keywords {
+        font-size: 0.5rem;
+    }
 }

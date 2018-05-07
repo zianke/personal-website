@@ -37,16 +37,16 @@ $(document).ready(function () {
     //     }
     // });
 
-    $('#computer-skills').height($('#biography').height() * 0.22);
-    $('#education').height($('#biography').height() * 0.16);
-    $('#work-experience').height($('#biography').height() * 0.2);
+    $('#computer-skills').height(Math.max($('#biography').height() * 0.22, $('#computer-skills .verticle-center-child').height() - 40));
+    $('#education').height(Math.max($('#biography').height() * 0.16, $('#education .verticle-center-child').height() - 40));
+    $('#work-experience').height(Math.max($('#biography').height() * 0.2, $('#work-experience .verticle-center-child').height() - 40));
 
 
     /* Image Card */
     $('.img-card-container').hover(function () {
-        $(this).find('.img-card').stop().animate({'margin-top': 0},400);
-    },function () {
-        $(this).find('.img-card').stop().animate({'margin-top': '4rem'},400);
+        $(this).find('.img-card').stop().animate({'margin-top': 0}, 400);
+    }, function () {
+        $(this).find('.img-card').stop().animate({'margin-top': '4rem'}, 400);
     });
 });
 
