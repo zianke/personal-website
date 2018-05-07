@@ -31,24 +31,28 @@
 
 #home .mask {
     height: 100%;
-    background: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 90%);
+    background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 90%);
 }
 
 #biography .index-section-container {
     height: 100%;
-    padding-left: 25px;
     background-color: #e6e5df;
 }
 
-@media screen and (max-width: 768px) {
-    #biography .index-section-container {
-        padding-left: 0;
-    }
+#biography .sections {
+    width: 100%;
 }
 
 #projects .index-section-container {
     height: 100%;
-    background-color: #2d3033;
+    background-color: #e6e5df;
+}
+
+#projects .img-cards-container {
+    max-width: 100%;
+    background-color: #5e5e5e;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 #blog .index-section-container {
@@ -128,4 +132,41 @@
     color: #131416;
     margin-top: 0;
     opacity: 0;
+}
+
+/* Image Card */
+.img-card-container {
+    display: inline-block;
+    height: 27rem;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1.5rem;
+}
+
+.img-card {
+    display: block;
+    width: 15rem;
+    height: 23rem;
+    background: #ffffff;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.img-card img {
+    width: 100%;
+    display: block;
+}
+
+.img-card-content {
+    width: 15rem;
+    height: 8rem;
+    text-align: center;
+    white-space: normal;
+}
+
+.img-card-content .center-child {
+    width: 90%;
+}
+
+.img-card-content .keywords {
+    font-size: 0.8rem;
 }

@@ -22,7 +22,7 @@ $(document).ready(function () {
         }
     });
 
-    /* Text card */
+    /* Text Card */
     $('.text-card').hover(function () {
         $(this).find('.more').stop().animate({'opacity': 1, 'margin-top': '3rem'}, 400);
     }, function () {
@@ -36,6 +36,18 @@ $(document).ready(function () {
     //         $(this).height($(this).find('.verticle-center-child').height() - 40);
     //     }
     // });
+
+    $('#computer-skills').height($('#biography').height() * 0.22);
+    $('#education').height($('#biography').height() * 0.16);
+    $('#work-experience').height($('#biography').height() * 0.2);
+
+
+    /* Image Card */
+    $('.img-card-container').hover(function () {
+        $(this).find('.img-card').stop().animate({'margin-top': 0},400);
+    },function () {
+        $(this).find('.img-card').stop().animate({'margin-top': '4rem'},400);
+    });
 });
 
 /* Scroll helper functions */
