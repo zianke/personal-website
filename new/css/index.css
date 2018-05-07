@@ -12,7 +12,7 @@
 @media screen and (max-width: 768px) {
     .index-section-container {
         margin-left: 0;
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     #home .index-section-container {
@@ -69,6 +69,7 @@
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #131416;
     padding: 1rem;
+    cursor: pointer;
     transition: all .4s;
 }
 
@@ -85,14 +86,14 @@
 }
 
 #work-experience {
-    height: 25%;
+    height: 20%;
 }
 
 .text-card h1 {
     width: 100%;
     margin-left: -1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 3px;
     color: #131416;
@@ -101,7 +102,7 @@
 .text-card p {
     width: 100%;
     margin-left: -1rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 300;
     color: #131416;
 }
@@ -121,7 +122,7 @@
     width: 100%;
     margin-left: -1rem;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: #131416;

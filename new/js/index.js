@@ -28,6 +28,14 @@ $(document).ready(function () {
     }, function () {
         $(this).find('.more').stop().animate({'opacity': 0, 'margin-top': '0'}, 400);
     });
+
+    // $('.text-card').each(function () {
+    //     if (window.innerHeight > 768) {
+    //         $(this).height($(this).find('.verticle-center-child').height());
+    //     } else {
+    //         $(this).height($(this).find('.verticle-center-child').height() - 40);
+    //     }
+    // });
 });
 
 /* Scroll helper functions */
