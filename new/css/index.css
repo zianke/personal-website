@@ -12,6 +12,12 @@
 @media screen and (max-width: 768px) {
     .index-section-container {
         margin-left: 0;
+        padding-top: 80px;
+    }
+
+    #home .index-section-container {
+        margin-left: 0;
+        padding-top: 0;
     }
 }
 
@@ -34,6 +40,12 @@
     background-color: #e6e5df;
 }
 
+@media screen and (max-width: 768px) {
+    #biography .index-section-container {
+        padding-left: 0;
+    }
+}
+
 #projects .index-section-container {
     height: 100%;
     background-color: #2d3033;
@@ -52,12 +64,13 @@
 /* Text Card */
 .text-card {
     display: block;
+    height: 10rem;
     width: 80%;
     margin: 2rem auto;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #131416;
     padding: 1rem;
-    transition: all .5s;
+    transition: all .4s;
 }
 
 .text-card:hover {
@@ -65,12 +78,13 @@
 }
 
 .text-card h1 {
+    width: 100%;
+    margin-left: -1rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 3px;
     color: #131416;
-    margin: 0;
 }
 
 .text-card p {
@@ -79,12 +93,23 @@
     color: #131416;
 }
 
+.text-card p span {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .text-card p span {
+        display: block;
+    }
+}
+
 .text-card .more {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: #131416;
-    margin-top: -1rem;
+    margin-top: 0;
     opacity: 0;
 }

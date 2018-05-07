@@ -273,3 +273,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.verticle-center-parent {
+    position: relative;
+}
+
+.verticle-center-child {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}

@@ -21,6 +21,13 @@ $(document).ready(function () {
             prevScrollTop = currentScrollTop;
         }
     });
+
+    /* Text card */
+    $('.text-card').hover(function () {
+        $(this).find('.more').animate({'opacity': 1, 'margin-top': '3rem'}, 400);
+    }, function () {
+        $(this).find('.more').animate({'opacity': 0, 'margin-top': '0'}, 400);
+    });
 });
 
 /* Scroll helper functions */
