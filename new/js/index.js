@@ -50,34 +50,3 @@ $(document).ready(function () {
         });
     });
 });
-
-/* Scroll helper functions */
-function scrollToElement(prevScrollTop, currentScrollTop) {
-    $('.navs').removeClass('navs-active');
-    var scrollTopId = nextScrollTopId(prevScrollTop, currentScrollTop);
-    autoScrolling = true;
-    $('html, body').stop().animate({
-        scrollTop: $('#' + scrollTopId).offset().top
-    }, 500, function () {
-        autoScrolling = false;
-    });
-    $('#' + scrollTopId + '-link').addClass('navs-active');
-}
-
-function nextScrollTopId(prevScrollTop, currentScrollTop) {
-    var scrollTopIds = ['home', 'biography', 'projects', 'blog', 'contact'];
-    var scrollTops = [$('#home').offset().top, $('#biography').offset().top, $('#projects').offset().top, $('#blog').offset().top, $('#contact').offset().top,]
-    if (currentScrollTop < prevScrollTop) {
-        for (var i = scrollTops.length - 1; i >= 0; i--) {
-            if (scrollTops[i] <= currentScrollTop) {
-                return scrollTopIds[i];
-            }
-        }
-    } else {
-        for (var i = 0; i < scrollTops.length; i++) {
-            if (scrollTops[i] >= currentScrollTop) {
-                return scrollTopIds[i];
-            }
-        }
-    }
-}
