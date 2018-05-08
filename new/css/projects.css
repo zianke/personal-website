@@ -50,6 +50,10 @@
     transition: all .4s;
 }
 
+.list-item-active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 .list-item-empty {
     width: 100%;
     height: 6rem;
@@ -58,6 +62,10 @@
 
 .list-item:hover {
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.list-item-active:hover {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .list-item-image {
