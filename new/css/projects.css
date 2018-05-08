@@ -4,11 +4,66 @@
     left: 10rem;
     bottom: 0;
     width: 25rem;
+    max-width: 40%;
     background-color: #e6e5df;
 }
 
 .list-triangle {
     position: absolute;
     top: 0;
-    left: 22.5rem;
+    right: 0;
+}
+
+.list-container {
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.list-title {
+    color: #131416;
+    font-size: 2rem;
+    height: 8rem;
+    line-height: 8rem;
+    margin-left: 3rem;
+}
+
+.list-outer {
+    position: relative;
+    height: calc(100% - 8rem);
+    width: 100%;
+    overflow: hidden;
+}
+
+.list-inner {
+    height: 100%;
+    width: 100%;
+    margin-left: 3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list-item {
+    width: 100%;
+    height: 6rem;
+    background-color: #5e5e5e;
+    margin: 1rem 0;
+}
+
+.list-outer .mask-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 50px 20px #e6e5df;
+
+}
+
+.list-outer .mask-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 50px 20px #e6e5df;
+
 }
