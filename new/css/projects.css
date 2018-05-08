@@ -17,7 +17,6 @@
 .list-container {
     height: 100%;
     margin-left: 50px;
-    margin-right: 25px;
 }
 
 .list-title {
@@ -25,7 +24,7 @@
     font-size: 2rem;
     height: 8rem;
     line-height: 8rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .list-outer {
@@ -38,7 +37,7 @@
 .list-inner {
     height: 100%;
     width: 100%;
-    margin-left: 3rem;
+    margin-left: 2rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -46,8 +45,34 @@
 .list-item {
     width: 100%;
     height: 6rem;
-    background-color: #5e5e5e;
     margin: 1rem 0;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.list-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.list-item-image {
+    height: 100%;
+    float: left;
+}
+
+.list-item-content {
+    height: 100%;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+.list-item-content h1 {
+    font-size: 1rem;
+    margin: 0.4rem 0 0.8rem 0;
+}
+
+.list-item-content p {
+    font-size: 0.8rem;
+    margin: 0 3rem 0 0;
 }
 
 .list-outer .mask-top {
@@ -65,5 +90,4 @@
     left: 0;
     right: 0;
     box-shadow: 0 0 50px 20px #e6e5df;
-
 }
