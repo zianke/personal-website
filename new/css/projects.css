@@ -1,0 +1,8 @@
+.list-div {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    bottom: 0;
+    width: 500px;
+    background-color: #e6e5df;
+}
