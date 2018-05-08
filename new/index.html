@@ -230,76 +230,14 @@
     </div>
 </div>
 
-<div class="navbar">
-    <div class="name font-link" onclick="window.location='/'">
-        <table style="width: 100%">
-            <tr>
-                <td style="width: 1%; white-space: nowrap">ZIAN</td>
-                <td style="padding-left: 5px">
-                    <hr/>
-                </td>
-            </tr>
-        </table>
-        <table style="width: 100%">
-            <tr>
-                <td style="padding-right: 5px">
-                    <hr/>
-                </td>
-                <td style="width: 1%; white-space: nowrap">KE</td>
-            </tr>
-        </table>
-    </div>
-    <div style="height: 100%" class="center-parent">
-        <div class="navs-div">
-            <a id="home-link" class="font-link navs navs-hover" href="/">HOME</a>
-            <a id="biography-link" class="font-link navs navs-hover" href="/biography/">BIOGRAPHY</a>
-            <a id="projects-link" class="font-link navs navs-hover" href="/projects/">PROJECTS</a>
-            <a id="blog-link" class="font-link navs navs-hover" href="/blog/">BLOG</a>
-            <a id="contact-link" class="font-link navs navs-hover" href="/#contact">CONTACT</a>
-        </div>
-    </div>
-    <svg height="100%" width="50" viewBox="0 0 100 100" preserveAspectRatio="none" class="navbar-triangle">
-        <polygon points="0,0 100,0 0,100" style="fill:#131416"/>
-    </svg>
-</div>
-
-<div class="navbar-mobile">
-    <div class="full-screen-container center-parent">
-        <div class="navs-div center-child">
-            <a class="font-link navs" href="/">HOME</a>
-            <a class="font-link navs" href="/biography/">BIOGRAPHY</a>
-            <a class="font-link navs" href="/projects/">PROJECTS</a>
-            <a class="font-link navs" href="/blog/">BLOG</a>
-            <a class="font-link navs" href="/#contact/">CONTACT</a>
-        </div>
-    </div>
-    <div class="name font-link" onclick="window.location='/'">
-        <table style="width: 100%">
-            <tr>
-                <td style="width: 1%; white-space: nowrap">ZIAN</td>
-                <td>
-                    <hr/>
-                </td>
-            </tr>
-        </table>
-        <table style="width: 100%">
-            <tr>
-                <td>
-                    <hr/>
-                </td>
-                <td style="width: 1%; white-space: nowrap">KE</td>
-            </tr>
-        </table>
-    </div>
-    <div class="navbar-toggle">
-        <div class="navbar-toggle-line" id="navbar-toggle-1"></div>
-        <div class="navbar-toggle-line" id="navbar-toggle-2"></div>
-        <div class="navbar-toggle-line" id="navbar-toggle-3"></div>
-    </div>
-</div>
-
+<div id="navbar"></div>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script type="text/javascript" src="./js/jquery.min.js">\x3C/script>')</script>
+<script>
+    $(document).ready(function() {
+        $('#navbar').load('navbar_index.html');
+    });
+</script>
 <script type="text/javascript" src="./js/common.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
