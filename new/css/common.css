@@ -92,16 +92,13 @@ body {
     position: absolute;
     top: 2.5rem;
     left: 2rem;
+    cursor: pointer;
     z-index: 10;
 
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
     color: #ffffff;
-}
-
-.name:nth-child(1) tr:nth-child(2) {
-    padding-left: 10px;
 }
 
 .navs-div {
