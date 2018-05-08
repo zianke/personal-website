@@ -66,8 +66,9 @@ $(document).ready(function () {
         $('.contact-icon').removeClass('contact-icon-active');
         $(this).addClass('contact-icon-active');
         var id = $(this).attr('id').slice('contact-icon-'.length);
-        $('.contact-content').fadeOut(400);
-        $('#contact-content-' + id).fadeIn(400);
+        $('.contact-content').fadeOut(400).promise().done(function(){
+            $('#contact-content-' + id).fadeIn(400);
+        });
     });
 });
 
