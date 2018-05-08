@@ -50,6 +50,12 @@
     transition: all .4s;
 }
 
+.list-item-empty {
+    width: 100%;
+    height: 6rem;
+    margin: 1rem 0;
+}
+
 .list-item:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
