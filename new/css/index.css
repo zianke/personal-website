@@ -146,6 +146,12 @@
     border-radius: 50%;
 }
 
+@media screen and (max-width: 576px) , screen and (max-height: 576px) {
+    .circle-container {
+        font-size: 10px;
+    }
+}
+
 .circle-container .contact-icon {
     display: block;
     position: absolute;

@@ -59,6 +59,16 @@ $(document).ready(function () {
     }, function () {
         $(this).find('.img-card').stop().animate({'margin-top': '4rem'}, 400);
     });
+
+
+    /* Contact */
+    $('.contact-icon').click(function () {
+        $('.contact-icon').removeClass('contact-icon-active');
+        $(this).addClass('contact-icon-active');
+        var id = $(this).attr('id').slice('contact-icon-'.length);
+        $('.contact-content').fadeOut(400);
+        $('#contact-content-' + id).fadeIn(400);
+    });
 });
 
 /* Scroll helper functions */
