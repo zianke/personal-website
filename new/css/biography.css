@@ -9,3 +9,55 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.biography-div {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    right: 0;
+    bottom: 0;
+}
+
+.biography-container {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    background-color: rgba(19, 20, 22, 0.8);
+    box-shadow: 0 0 100px 100px rgba(19, 20, 22, 0.8);
+}
+
+.biography-introduction {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #ffffff;
+    width: 800px;
+    max-width: calc(100% - 10rem);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.biography-name table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 25px;
+}
+
+.biography-name hr {
+    border: none;
+    height: 2px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.biography-introduction-content {
+    text-align: left;
+}
+
+.biography-introduction-content span {
+    background-color: rgba(0, 0, 0, 0.5);
+}
