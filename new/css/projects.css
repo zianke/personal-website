@@ -1,8 +1,14 @@
 .list-div {
     position: fixed;
     top: 0;
-    left: 200px;
+    left: 10rem;
     bottom: 0;
-    width: 500px;
+    width: 25rem;
     background-color: #e6e5df;
+}
+
+.list-triangle {
+    position: absolute;
+    top: 0;
+    left: 22.5rem;
 }
