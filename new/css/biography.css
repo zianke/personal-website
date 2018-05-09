@@ -24,8 +24,8 @@
     left: 0;
     right: 0;
     height: 2000px;
-    background-color: rgba(19, 20, 22, 0.8);
-    box-shadow: 0 0 100px 100px rgba(19, 20, 22, 0.8);
+    background-color: rgba(19, 20, 22, 0.9);
+    box-shadow: 0 0 100px 100px rgba(19, 20, 22, 0.9);
 }
 
 .biography {
@@ -81,4 +81,12 @@
     height: 100%;
     width: 0;
     border-radius: 2px;
+}
+
+.biography-item {
+    margin-bottom: 2rem;
+}
+
+#education {
+    font-size: 1rem;
 }
