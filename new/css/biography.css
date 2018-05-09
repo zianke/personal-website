@@ -85,10 +85,10 @@
 
 .biography-item {
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .biography-item-content {
-    text-align: left;
     margin-left: 1rem;
 }
 
