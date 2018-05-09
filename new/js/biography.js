@@ -1,7 +1,10 @@
 $(document).ready(function () {
     $('.biography-container').height($('.biography').height());
 
-    $(document.body).on('appear', '#appear-test', function() {
-        console.log('appear');
+    $('.progress-bar').each(function () {
+        $(this).appear();
+        $(this).on('appear', function () {
+            $(this).animate({'width': $(this).attr('width') + '%'}, 1500, 'swing');
+        });
     });
 });
