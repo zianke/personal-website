@@ -87,6 +87,11 @@
     margin-bottom: 2rem;
 }
 
-#education {
+.biography-item-content {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+#education, #work-experience, #project-experience {
     font-size: 1rem;
 }
