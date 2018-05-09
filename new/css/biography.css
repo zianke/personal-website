@@ -18,6 +18,16 @@
     bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .background {
+        left: 0;
+    }
+
+    .biography-div {
+        left: 0;
+    }
+}
+
 .biography-container {
     position: absolute;
     top: 120%;
@@ -39,6 +49,13 @@
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .biography {
+        width: 90%;
+        max-width: 600px;
+    }
 }
 
 .biography-name table {
@@ -86,6 +103,30 @@
 .biography-item {
     margin-bottom: 2rem;
     text-align: left;
+}
+
+.biography-item-line {
+    overflow: auto;
+}
+
+.biography-item-line span:nth-child(1) {
+    float: left;
+}
+
+.biography-item-line span:nth-child(2) {
+    float: right;
+}
+
+@media screen and (max-width: 1200px) {
+    .biography-item-line span:nth-child(1) {
+        float: none;
+        display: block;
+    }
+
+    .biography-item-line span:nth-child(2) {
+        float: none;
+        display: block;
+    }
 }
 
 .biography-item-content {
