@@ -61,3 +61,16 @@
 .biography-introduction-content span {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.progress-track {
+    background-color: rgba(200, 200, 200, 0.5);
+    height: 4px;
+    border-radius: 2px;
+}
+
+.progress-bar {
+    background-color: #ffffff;
+    height: 100%;
+    width: 50%;
+    border-radius: 2px;
+}
