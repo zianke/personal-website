@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Zian Ke</title>
@@ -19,156 +19,18 @@
         </div>
         <div class="list-outer">
             <div class="list-inner">
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
+                <a style="display: block; text-decoration: none; color: #131416" th:each="post : ${posts}" th:href="@{/projects(title=${post.uri})}">
+                    <div class="list-item">
+                        <div class="list-item-image">
+                            <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
+                                 style="height: 100%">
+                        </div>
+                        <div class="list-item-content font-quote">
+                            <h1 th:text="${post.title}"/>
+                            <p th:text="${post.content}" />
+                        </div>
                     </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item list-item-active">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U
-                            V W X Y Z</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-                            a a a a a a a</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U
-                            V W X Y Z</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U
-                            V W X Y Z</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-image">
-                        <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                             style="height: 100%">
-                    </div>
-                    <div class="list-item-content font-quote">
-                        <h1>
-                            Title
-                        </h1>
-                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U
-                            V W X Y Z</p>
-                    </div>
-                </div>
+                </a>
                 <div class="list-item-empty"></div>
                 <div class="list-item-empty"></div>
                 <div class="list-item-empty"></div>

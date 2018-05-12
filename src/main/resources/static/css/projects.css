@@ -1,7 +1,7 @@
 .list-div {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10rem;
     bottom: 0;
     width: 25rem;
     max-width: 40%;
