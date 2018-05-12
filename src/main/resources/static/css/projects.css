@@ -78,7 +78,6 @@
     overflow-x: hidden;
 }
 
-
 @media screen and (max-width: 768px) {
     .list-inner {
         margin-left: 1rem;
@@ -147,4 +146,13 @@
     left: 0;
     right: 0;
     box-shadow: 0 0 50px 20px #e6e5df;
+}
+
+.article-div {
+    position: absolute;
+    top: 0;
+    left: 35rem;
+    right: 0;
+    height: 2000px;
+    background-color: red;
 }

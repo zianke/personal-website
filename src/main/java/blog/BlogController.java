@@ -23,10 +23,11 @@ public class BlogController {
 
     @GetMapping("/projects")
     public String projects(@RequestParam(name = "title", required = false) String title, Model model) {
-        model.addAttribute("title", title);
+        String content = "<h1>Title</h1><p>Content</p>";
+        model.addAttribute("content", content);
         List<Post> posts = new ArrayList<>();
-        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "content content content content content content content"));
-        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "content content content content content content content"));
+        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "subtitle subtitle subtitle subtitle subtitle subtitle subtitle"));
+        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "subtitle subtitle subtitle subtitle subtitle subtitle subtitle"));
         model.addAttribute("posts", posts);
         return "projects";
     }
@@ -35,8 +36,8 @@ public class BlogController {
     public String blog(@RequestParam(name = "title", required = false) String title, Model model) {
         model.addAttribute("title", title);
         List<Post> posts = new ArrayList<>();
-        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "content content content content content content content"));
-        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "content content content content content content content"));
+        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "subtitle subtitle subtitle subtitle subtitle subtitle subtitle"));
+        posts.add(new Post("cssa-apps", "CSSA APPs", "eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg", "subtitle subtitle subtitle subtitle subtitle subtitle subtitle"));
         model.addAttribute("posts", posts);
         return "blog";
     }
@@ -52,12 +53,12 @@ class Post {
     public String uri;
     public String title;
     public String img;
-    public String content;
+    public String subtitle;
 
-    public Post(String uri, String title, String img, String content) {
+    public Post(String uri, String title, String img, String subtitle) {
         this.uri = uri;
         this.title = title;
         this.img = img;
-        this.content = content;
+        this.subtitle = subtitle;
     }
 }
