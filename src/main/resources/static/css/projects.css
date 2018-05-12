@@ -153,6 +153,5 @@
     top: 0;
     left: 35rem;
     right: 0;
-    height: 2000px;
-    background-color: red;
+    padding: 50px;
 }
