@@ -6,5 +6,8 @@ $(document).ready(function () {
         $(this).on('appear', function () {
             $(this).animate({'width': $(this).attr('width') + '%'}, 1500, 'swing');
         });
+        if ($(this).is(':appeared')) {
+            $(this).animate({'width': $(this).attr('width') + '%'}, 1500, 'swing');
+        }
     });
 });
