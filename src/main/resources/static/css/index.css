@@ -131,6 +131,43 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    position: relative;
+}
+
+#blog .img-cards-container {
+    max-width: calc(100% - 50px);
+    background-color: rgba(0, 0, 0, 0);
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 50px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    #blog .img-cards-container {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+#blog ::-webkit-scrollbar {
+    width: 12px;
+}
+
+#blog ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#blog ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(200, 200, 200, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
 }
 
 #contact .index-section-container {

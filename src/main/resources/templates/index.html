@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Zian Ke</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
 </head>
 <body id="index">
 <div id="preloader">
@@ -108,56 +108,55 @@
     <div class="index-section" id="projects">
         <div class="index-section-container">
             <div class="img-cards-container">
-                <div class="img-card-container">
-                    <div class="img-card" onclick="window.location='/projects?title=cssa-apps'">
-                        <img src="./img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg">
+                <a class="img-card-container" th:each="post : ${projects}" th:href="@{/projects(title=${post.id})}">
+                    <div class="img-card">
+                        <img th:src="${'img/'+post.cover}" />
                         <div class="img-card-content center-parent">
-                            <div class="center-child font-quote">
-                                <p><b>CSSA APPs</b></p>
-                                <p class="keywords">Keywords: React, Redux, And Design, Flask, SQLite, Nginx, Azure</p>
+                            <div class="center-child font-link">
+                                <p><b th:text="${post.title}"></b></p>
+                                <p class="keywords" th:text="${post.subtitle}"></p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="img-card-container">
-                    <div class="img-card" onclick="window.location='/projects?title=online-appraisal-template'">
-                        <img src="./img/5511210dd15819a6dca332e9c0e9281c1401c984efa196561a1d55e3def779c0.png">
-                        <div class="img-card-content center-parent">
-                            <div class="center-child font-quote">
-                                <p><b>Online Appraisal System</b></p>
-                                <p class="keywords">Keywords: jQuery, Bootstrap, CodeIgniter, MySQL, Apache, Alibaba
-                                    Cloud</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-card-container">
-                    <div class="img-card" onclick="window.location='/projects?title=classical-music-in-shs'">
-                        <img src="./img/e06b79ac7652cf615036cca35f7447d8a432f5c780fd8e009077180dfce283b%60.png">
-                        <div class="img-card-content center-parent">
-                            <div class="center-child font-quote">
-                                <p><b>Beverage Serving Robot</b></p>
-                                <p class="keywords">Keywords: Android, Arduino, SolidWorks</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-card-container">
-                    <div class="img-card" onclick="window.location='/projects'">
-                        <img src="./img/more.png">
+                </a>
+                <a class="img-card-container" href="/projects">
+                    <div class="img-card">
+                        <img src="./img/more.png"/>
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b>SEE ALL PROJECTS</b></p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
     <div class="index-section" id="blog">
         <div class="index-section-container">
-
+            <div class="img-cards-container">
+                <a class="img-card-container" th:each="post : ${blog}" th:href="@{/blog(title=${post.id})}">
+                    <div class="img-card">
+                        <img th:src="${'img/'+post.cover}" />
+                        <div class="img-card-content center-parent">
+                            <div class="center-child font-link">
+                                <p><b th:text="${post.title}"></b></p>
+                                <p class="keywords" th:text="${post.subtitle}"></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="img-card-container" href="/blog">
+                    <div class="img-card">
+                        <img src="./img/more.png"/>
+                        <div class="img-card-content center-parent">
+                            <div class="center-child font-link">
+                                <p><b>SEE ALL POSTS</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="index-section" id="contact">
@@ -195,12 +194,12 @@
                 </div>
                 <div id="contact-content-qq" class="contact-content center-parent">
                     <div class="center-child">
-                        <img src="./img/qq.jpg" style="width: 100%">
+                        <img src="./img/qq.jpg" style="width: 100%"/>
                     </div>
                 </div>
                 <div id="contact-content-weixin" class="contact-content center-parent">
                     <div class="center-child">
-                        <img src="./img/weixin.jpg" style="width: 100%">
+                        <img src="./img/weixin.jpg" style="width: 100%"/>
                     </div>
                 </div>
                 <div id="contact-content-envelope" class="contact-content center-parent" style="display: block">
@@ -232,7 +231,6 @@
 
 <div id="navbar"></div>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script type="text/javascript" src="./js/jquery.min.js">\x3C/script>')</script>
 <script>
     $(document).ready(function() {
         $('#navbar').load('navbar_index.html');

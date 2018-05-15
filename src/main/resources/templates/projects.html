@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Zian Ke</title>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <link rel="stylesheet" type="text/css" href="./css/projects.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/projects.css"/>
 </head>
 <body id="projects">
 <div id="preloader">
@@ -19,15 +19,15 @@
         </div>
         <div class="list-outer">
             <div class="list-inner">
-                <a style="display: block; text-decoration: none; color: #131416" th:each="post : ${posts}" th:href="@{/projects(title=${post.uri})}">
+                <a style="display: block; text-decoration: none; color: #131416" th:each="post : ${posts}"
+                   th:href="@{/projects(title=${post.id})}">
                     <div class="list-item">
                         <div class="list-item-image">
-                            <img src="img/eb24ddc481f04ac4ee9c92d14d988fa148b319901df62e733d7e899f8cf2847d.jpg"
-                                 style="height: 100%">
+                            <img th:src="${'img/'+post.cover}" style="height: 100%"/>
                         </div>
                         <div class="list-item-content font-quote">
                             <h1 th:text="${post.title}"/>
-                            <p th:text="${post.subtitle}" />
+                            <p th:text="${post.subtitle}"/>
                         </div>
                     </div>
                 </a>
@@ -44,16 +44,19 @@
         </div>
 
     </div>
-    <svg height="100%" width="50" viewBox="0 0 100 100" preserveAspectRatio="none" class="list-triangle display-on-large">
+    <svg height="100%" width="50" viewBox="0 0 100 100" preserveAspectRatio="none"
+         class="list-triangle display-on-large">
         <polygon points="100,100 100,0 0,100" style="fill:#ffffff"/>
     </svg>
 </div>
 
-<div class="article-div font-text" th:utext="${article}"></div>
+<div class="article-div font-text">
+    <h2 th:text="${title}"></h2>
+    <div th:utext="${content}"></div>
+</div>
 
 <div id="navbar"></div>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script type="text/javascript" src="./js/jquery.min.js">\x3C/script>')</script>
 <script>
     $(document).ready(function () {
         $('#navbar').load('navbar.html');
