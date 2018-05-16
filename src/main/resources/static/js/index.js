@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     $('#resume').click(function () {
-        window.location.href = "/resume/";
+        window.location.href = "/ZianKeResume.pdf";
     });
 
     /* Text Card */
