@@ -1,2 +1,2 @@
 # zianke.com
-Personal Website Developed with jQuery, Spring Boot & MongoDB
+Personal Website developed with jQuery, Spring Boot & MongoDB
