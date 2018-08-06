@@ -157,11 +157,11 @@
     padding: 50px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .article-div {
         position: absolute;
         top: 0;
-        left: 35rem;
+        left: 0;
         right: 0;
         padding: 50px 10px;
     }
