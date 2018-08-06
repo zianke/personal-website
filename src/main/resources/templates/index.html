@@ -110,7 +110,7 @@
             <div class="img-cards-container">
                 <a class="img-card-container" th:each="post : ${projects}" th:href="@{/projects(title=${post.id})}">
                     <div class="img-card">
-                        <img th:src="${'img/'+post.cover}" />
+                        <img th:src="${'/s3/'+post.cover}" />
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b th:text="${post.title}"></b></p>
@@ -121,7 +121,7 @@
                 </a>
                 <a class="img-card-container" href="/projects">
                     <div class="img-card">
-                        <img src="./img/more.png"/>
+                        <img src="/s3/more.png"/>
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b>SEE ALL PROJECTS</b></p>
@@ -137,7 +137,7 @@
             <div class="img-cards-container">
                 <a class="img-card-container" th:each="post : ${blog}" th:href="@{/blog(title=${post.id})}">
                     <div class="img-card">
-                        <img th:src="${'img/'+post.cover}" />
+                        <img th:src="${'/s3/'+post.cover}" />
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b th:text="${post.title}"></b></p>
@@ -148,7 +148,7 @@
                 </a>
                 <a class="img-card-container" href="/blog">
                     <div class="img-card">
-                        <img src="./img/more.png"/>
+                        <img src="/s3/more.png"/>
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b>SEE ALL POSTS</b></p>
@@ -194,12 +194,12 @@
                 </div>
                 <div id="contact-content-qq" class="contact-content center-parent">
                     <div class="center-child">
-                        <img src="./img/qq.jpg" style="width: 100%"/>
+                        <img src="/s3/qq.jpg" style="width: 100%"/>
                     </div>
                 </div>
                 <div id="contact-content-weixin" class="contact-content center-parent">
                     <div class="center-child">
-                        <img src="./img/weixin.jpg" style="width: 100%"/>
+                        <img src="/s3/weixin.jpg" style="width: 100%"/>
                     </div>
                 </div>
                 <div id="contact-content-envelope" class="contact-content center-parent" style="display: block">
