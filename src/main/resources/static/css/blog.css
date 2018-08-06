@@ -156,3 +156,9 @@
     right: 0;
     padding: 50px;
 }
+
+@media screen and (max-width: 576px) {
+    .article-div {
+        padding: 50px 10px;
+    }
+}
