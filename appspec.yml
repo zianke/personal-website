@@ -7,10 +7,11 @@ permissions:
 - object: /home/ubuntu/zian.ke-test
   owner: ubuntu
   group: ubuntu
+  mode: 777
 hooks:
   BeforeInstall:
-  - location: before_install.sh
+  - location: scripts/before_install.sh
     runas: ubuntu
   AfterInstall:
-  - location: after_install.sh
+  - location: scripts/after_install.sh
     runas: ubuntu
