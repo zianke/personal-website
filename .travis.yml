@@ -6,12 +6,3 @@ jdk:
 
 script:
   - ./gradlew build
-
-deploy:
-  - provider: codedeploy
-    revision_type: github
-    access_key_id: AKIAIT7X34VXOFX4K7DQ
-    secret_access_key: secure: e31N5nqs9MjqGV88CijeDBpYG05OzO+NX25oxQTpCMds7+xln7Nc04Oe1OnRrWtDSOeHqZHGayffBHMwFMievshard9aXUhruGDUGjYFCfE88Vm9P9YkGtVc3UhPk1gRj2JiDA+3nKI2ryzcrL3Pzhz6Yw/m2afgA7bOoh6ts1DbtnnzOQRgI6q1y2PDhBW3eesaT78ZsPBb5hvpgty6brmiduN2TMKjZbtn6CjCH/iSef86pOdoujUin3dmtSISudu6rKwV0ROYh1gChjNNuorachbLwriZmVMpf8LjUVmSojCTaNQyPtsOuVcRXK+yKRPg3ne1sqgvxFSkY/xahtSxKMQ/LInqcIKPCE9H/srpMg3ysCL/7DdhVd+gJ4BnvgKpzpZSwPYHM8QHGBdUtCmSJv/jCmgnmIqfSTqSBCpaaKfluS6EwwfB7vYLGWzLQL27AaalwbS7BUuNNwPRbtNwEIfJQVD37RSgl3VOAwxmlYeHxnMua9hAOaNJqBEq13i7cuDlaLhCeeXMHxRHkoikjtKoS/guEAAv3Joi2BKtrJei8/X4tSe8Dh5VcAWbbcdGLU38sJq545V4QEqGVS5ncTYmYteEZtcA1fNaOGvsqaiwZ4+I5ktCAXq2ZjjPXJdHOlDIXHfkCqWQ/SE5pUsEWQNbXqR2SBo82DWPKo8=
-    application: PersonalWebsite-App
-    deployment_group: PersonalWebsite-DepGrp
-    region: us-east-2
