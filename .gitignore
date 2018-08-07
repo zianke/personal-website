@@ -1,9 +1,7 @@
 .idea/
 .DS_Store
 /out/
-/build/classes/
-/build/resources/
-/build/tmp/
+/build/
 
 .gradle
 
