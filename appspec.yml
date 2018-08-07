@@ -2,16 +2,11 @@ version: 0.0
 os: linux
 files:
 - source: /
-  destination: /home/ubuntu/zian.ke-test
-permissions:
-- object: /home/ubuntu/zian.ke-test
-  owner: ubuntu
-  group: ubuntu
-  mode: 777
+  destination: /home/ubuntu/zian.ke
 hooks:
   BeforeInstall:
   - location: scripts/before_install.sh
-    runas: ubuntu
-  AfterInstall:
+    runas: root
+  ApplicationStart:
   - location: scripts/after_install.sh
-    runas: ubuntu
+    runas: root
