@@ -110,9 +110,9 @@
     <div class="index-section" id="projects">
         <div class="index-section-container">
             <div class="img-cards-container">
-                <a class="img-card-container" th:each="post : ${projects}" th:href="@{/projects(title=${post.id})}">
+                <a class="img-card-container" th:each="post : ${projects}" th:href="@{'/projects/'+${post.id}}">
                     <div class="img-card">
-                        <img th:src="${'/'+post.cover}" />
+                        <img th:src="${'/'+post.cover}"/>
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b th:text="${post.title}"></b></p>
@@ -137,9 +137,9 @@
     <div class="index-section" id="blog">
         <div class="index-section-container">
             <div class="img-cards-container">
-                <a class="img-card-container" th:each="post : ${blog}" th:href="@{/blog(title=${post.id})}">
+                <a class="img-card-container" th:each="post : ${blog}" th:href="@{'/blog/'+${post.id}}">
                     <div class="img-card">
-                        <img th:src="${'/'+post.cover}" />
+                        <img th:src="${'/'+post.cover}"/>
                         <div class="img-card-content center-parent">
                             <div class="center-child font-link">
                                 <p><b th:text="${post.title}"></b></p>
@@ -224,7 +224,8 @@
                 <div id="contact-icon-facebook" class="contact-icon deg135"><i class="fab fa-facebook fa-lg"></i></div>
                 <div id="contact-icon-qq" class="contact-icon deg180"><i class="fab fa-qq fa-lg"></i></div>
                 <div id="contact-icon-weixin" class="contact-icon deg225"><i class="fab fa-weixin fa-lg"></i></div>
-                <div id="contact-icon-envelope" class="contact-icon contact-icon-active deg270"><i class="fas fa-envelope fa-lg"></i></div>
+                <div id="contact-icon-envelope" class="contact-icon contact-icon-active deg270"><i
+                        class="fas fa-envelope fa-lg"></i></div>
                 <div id="contact-icon-phone" class="contact-icon deg315"><i class="fas fa-phone fa-lg"></i></div>
             </div>
         </div>
@@ -234,7 +235,7 @@
 <div id="navbar"></div>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#navbar').load('/navbar_index.html');
     });
 </script>
