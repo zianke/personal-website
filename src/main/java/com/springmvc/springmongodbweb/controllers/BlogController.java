@@ -54,9 +54,11 @@ public class BlogController {
             }
             model.addAttribute("title", post.title);
             model.addAttribute("content", post.content);
+            model.addAttribute("currentId", post.id);
         } catch (Exception e) {
             model.addAttribute("title", "");
             model.addAttribute("content", "");
+            model.addAttribute("currentId", "");
         }
         List<Post> posts = new ArrayList<>();
         for (Post post : postRepository.findAll()) {
@@ -77,9 +79,11 @@ public class BlogController {
             }
             model.addAttribute("title", post.title);
             model.addAttribute("content", post.content);
+            model.addAttribute("currentId", post.id);
         } catch (Exception e) {
             model.addAttribute("title", "");
             model.addAttribute("content", "");
+            model.addAttribute("currentId", "");
         }
         List<Post> posts = new ArrayList<>();
         for (Post post : postRepository.findAll()) {
