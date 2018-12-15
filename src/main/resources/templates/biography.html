@@ -228,6 +228,35 @@
             </div>
             <div class="biography-item">
                 <div class="biography-item-line">
+                    <span><b>AuraMaze.org</b></span>
+                    <span>Ann Arbor, MI</span>
+                </div>
+                <div class="biography-item-line">
+                    <span><i>Co-Founder and CTO</i></span>
+                    <span><i>August 2018 – Present</i></span>
+                </div>
+                <div class="biography-item-content">
+
+                    &#8226; Objective: Creating a smart audio guide for art museums, with which users can identify paintings with phone camera, listen to audio introductions, write reviews for favorite artworks, and get personalized recommendation.<br />
+
+                    &#8226; Implemented low-latency painting identification algorithm based on OpenCV contour detection and image signature search engine, which covers more than 140,000 public domain artworks, with 95\%+ accuracy and tolerance of rotation, resizing and compression.<br />
+
+                    &#8226; Integrated End-to-End Text-to-Speech Synthesis Model into React Native mobile front-end interface.<br />
+
+                    &#8226; Established a load balancer with Nginx to redirect user requests to multiple servers running Express.js and Flask RESTful API, in order to distribute high CPU demands in image processing and ensure zero downtime during rolling update or instance crash.<br />
+
+                    &#8226; Authenticated users with JSON Web Token and Passport.js to support multiple login methods including username \& password, Gmail, Facebook.<br />
+
+                    &#8226; Built an Elasticsearch text search engine supporting multiple languages, fuzzy query, search result highlighting.<br />
+
+                    &#8226; Developed a distributed message streaming system with Kafka, of which the main producer is Amazon Aurora, with Debezium capturing all database changes, and the consumers are microservices including Elasticsearch.<br />
+
+                    &#8226; Published iOS version on App Store and Android version on Google Play.<br />
+
+                </div>
+            </div>
+            <div class="biography-item">
+                <div class="biography-item-line">
                     <span><b>MPOWER Financing</b></span>
                     <span>Washington, D.C.</span>
                 </div>
@@ -237,22 +266,15 @@
                 </div>
                 <div class="biography-item-content">
 
-                    &#8226; Developed a Salary Prediction Model with scikit-learn to serve as credit reference for
-                    international student loans.<br/>
+                    &#8226; Objective: Developing a Salary Prediction Model to serve as credit reference for international student loans.<br />
 
-                    &#8226; Cleansed H1B application data sets by launching a Solr search engine to map major name
-                    keywords to CIP codes.<br/>
+                    &#8226; Cleansed H1B application datasets by launching a Solr search engine to map major name keywords to CIP codes.<br />
 
-                    &#8226; Applied Mincer earnings function and Burr distribution on data set of Economic Research
-                    Institute to estimate salary percentiles across 6900 occupations in 67 countries, with R<sup>2</sup>
-                    score reaching 0.99.<br/>
+                    &#8226; Applied Mincer earnings function and Burr distribution on dataset of Economic Research Institute to estimate salary percentiles across 6399 occupations in 67 countries, with R<sup>2</sup> score reaching 0.99.<br />
 
-                    &#8226; Built a random forest regression model based on college academic factors to predict average
-                    salary of 7593 U.S. colleges and achieved a 0.85 R<sup>2</sup> score in k-fold cross
-                    validation.<br/>
+                    &#8226; Built a Random Forest Regression model with scikit-learn, based on college academic factors to predict average salary of 7593 U.S. colleges, and achieved a 0.85 R<sup>2</sup> score in k-fold cross validation.<br />
 
-                    &#8226; Conducted ETL on data and models into AWS PostgreSQL and S3 for durable storage and
-                    long-term analysis.<br/>
+                    &#8226; Established a Data Warehouse on top of Amazon RDS PostgreSQL database and S3 cloud storage service for durable storage and long-term analysis of data and models.<br />
 
                 </div>
             </div>
@@ -267,20 +289,73 @@
                 </div>
                 <div class="biography-item-content">
 
-                    &#8226; Developed an Online Appraisal System using jQuery for front-end and CodeIgniter MVC
-                    framework with MySQL for back-end, which enables HR to create/buy and send questionnaires to
-                    employees for investigation and analysis.<br/>
+                    &#8226; Objective: Building an Online Appraisal System which enables HR to create/buy and send questionnaires to employees for investigation and analysis.<br />
 
-                    &#8226; Achieved responsiveness for multiple viewports such as smartphones and tablets with
-                    Bootstrap's Grid system.<br/>
+                    &#8226; Developed the website with jQuery for front-end and CodeIgniter MVC framework \& MySQL for back-end.<br />
 
-                    &#8226; Validated forms in front-end using jQuery Validation Plugin to give instant feedback and
-                    reduce server traffic, and again in back-end using CodeIgniter Form Validation library to improve
-                    security.<br/>
+                    &#8226; Achieved responsiveness for multiple viewports such as smartphones and tablets with Bootstrap's Grid system.<br />
 
-                    &#8226; Reconstructed the questionnaire creation page with Angular to avoid direct DOM modification,
-                    and utilize data binding to handle the complex relation between question scores and
-                    multi-dimensional appraisal grades.<br/>
+                    &#8226; Validated forms in front-end using jQuery Validation Plugin to give instant feedback and reduce server traffic, and again in back-end using CodeIgniter Form Validation library to improve security.<br />
+
+                    &#8226; Reconstructed the questionnaire creation page with Angular to avoid direct DOM modification, and utilize data binding to handle the complex relation between question scores and multi-dimensional appraisal grades.<br />
+
+                </div>
+            </div>
+        </div>
+
+        <div id="research-experience" class="biography-section font-text">
+            <div class="biography-name">
+                <table>
+                    <tr>
+                        <td>
+                            <hr/>
+                        </td>
+                        <td style="width: 1%; white-space: nowrap">
+                            <div style="font-size: 2rem; margin: 2rem">Project Experience</div>
+                        </td>
+                        <td>
+                            <hr/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="biography-item">
+                <div class="biography-item-line">
+                    <span><b>Table Embeddings</b></span>
+                    <span>Ann Arbor, MI</span>
+                </div>
+                <div class="biography-item-line">
+                    <span><i>Instructed by Prof. Michael Cafarella at University of Michigan</i></span>
+                    <span><i>September 2018 – Present</i></span>
+                </div>
+                <div class="biography-item-content">
+
+                    &#8226; Conducted Data ETL on 233 million tables from Web HTML with Python multiprocessing scripts to extract information of column labels and row entities.<br />
+
+                    &#8226; Executed Hadoop MapReduce tasks to analyze column label frequency and distribution.<br />
+
+                    &#8226; Applied Named Entity Recognition algorithms on table columns to get initial information of potential labels.<br />
+
+                    &#8226; Built PyTorch neural networks and decision trees which take encoded table as input and predict missing column labels or cell values.<br />
+
+                </div>
+            </div>
+            <div class="biography-item">
+                <div class="biography-item-line">
+                    <span><b>Fingerprint Minutiae Extraction Based on Deep Learning</b></span>
+                    <span>Shanghai, China</span>
+                </div>
+                <div class="biography-item-line">
+                    <span><i>Instructed by Prof. Manhua Liu at Shanghai Jiao Tong University</i></span>
+                    <span><i>March 2017 – June 2017</i></span>
+                </div>
+                <div class="biography-item-content">
+
+                    &#8226; Generated partial fingerprint figures containing minutiae, with Matlab Image Processing Toolbox, based on manually labeled fingerprint datasets to serve as training data.<br />
+
+                    &#8226; Achieved 98.47% accuracy in classifying partial fingerprint figures with and without minutiae by building a Convolutional Neural Network with TensorFlow.<br />
+
+                    &#8226; Determined the coordinates of minutiae in a raw fingerprint image according to the classification results of cropped figures, which can be taken as the input of fingerprint matching algorithm.<br />
 
                 </div>
             </div>
@@ -303,65 +378,49 @@
                 </table>
             </div>
             <div class="biography-item">
-                <div><b>app.um-cssa.org</b>: Web applications developed for University of Michigan Chinese Students and
-                    Scholars Association..
+                <div><b>Software Systems Related Projects</b>: Course projects of UMich EECS 482, EECS 485, EECS 489 and MIT 6.824..
                 </div>
                 <div class="biography-item-content">
 
-                    &#8226; Led an eight-person team to develop website front-end using React, with Redux as state
-                    container, Ant Design as UI style theme, React Router as client-side router, React Motion and Ant
-                    Motion as animation design tools.<br/>
+                    &#8226; Wrote a C++ thread library which implements thread switch, mutual exclusion and condition variable.<br />
 
-                    &#8226; Designed reuseable components including react-stretchable-button (published on NPM with 300+
-                    downloads).<br/>
+                    &#8226; Constructed a pager using C++ which manages application processes' virtual address spaces.<br />
 
-                    &#8226; Built RESTful APIs based on Flask and SQLite, which receive AJAX requests and send JSON
-                    strings.<br/>
+                    &#8226; Developed a multi-threaded network file server based on hierarchical file systems and socket programming.<br />
 
-                    &#8226; Implemented a search engine based on Chinese text segmentation, Hadoop MapReduce indexing
-                    and tf-idf scores.<br/>
+                    &#8226; Set up a video streaming CDN with support for adaptive bitrate selection and DNS load balancing.<br />
 
-                    &#8226; Deployed multiple React clients and Flask servers on Azure Virtual Machine via Nginx Reverse
-                    Proxy.<br/>
+                    &#8226; Designed a reliable transport protocol on the basis of UDP, which can handle packet loss, delay, corruption, duplication, and reordering.<br />
+
+                    &#8226; Built multi-worker and fault tolerant MapReduce servers in Python and Go to process user submitted tasks.<br />
+
+                    &#8226; Implemented Raft with Go to achieve consensus in leader election and log replication, and launched a distributed key/value storage service on top of Raft.<br />
 
                 </div>
             </div>
             <div class="biography-item">
-                <div><b>Software Systems Related Projects</b>: Course projects of UMich EECS 482, EECS 485 and MIT
-                    6.824..
+                <div><b>CSSA Apps (app.um-cssa.org)</b>: Web applications developed for University of Michigan Chinese Students and Scholars Association..
                 </div>
                 <div class="biography-item-content">
 
-                    &#8226; Wrote a C++ thread library which implements thread switch, mutual exclusion and condition
-                    variable.<br/>
+                    &#8226; Led an eight-person team to develop React front-end, with Redux as state container, Ant Design as UI style theme, React Router as client-side router, React Motion and Ant Motion as animation design tools.<br />
 
-                    &#8226; Constructed a pager using C++ which manages application processes' virtual address
-                    spaces.<br/>
+                    &#8226; Designed reuseable components such as react-stretchable-button (published on NPM with 1700+ downloads).<br />
 
-                    &#8226; Set up a multi-threaded network file server based on hierarchical file systems and socket
-                    programming.<br/>
+                    &#8226; Implemented a search engine based on Chinese text segmentation, Hadoop MapReduce indexing and tf-idf scores.<br />
 
-                    &#8226; Built multi-worker and fault tolerant MapReduce servers in Python and Go to handle user
-                    submitted tasks.<br/>
-
-                    &#8226; Implemented Raft with Go to achieve consensus in leader election and log replication, and
-                    launched a distributed key/value storage service on top of Raft.<br/>
+                    &#8226; Deployed multiple React clients and Flask servers on Azure Virtual Machine via Nginx Reverse Proxy.<br />
 
                 </div>
             </div>
             <div class="biography-item">
-                <div><b>Beverage Serving Robot</b>: Bluetooth controlled robot which can automatically add beverage for
-                    guests..
+                <div><b>Beverage Serving Robot</b>: Bluetooth controlled robot which can automatically add beverage for guests..
                 </div>
                 <div class="biography-item-content">
 
-                    &#8226; Drew CAD of the robot using SolidWorks and produced its mechanical arms with 3D printing
-                    techniques.<br/>
+                    &#8226; Drew CAD of the robot using SolidWorks and created its mechanical arms with 3D printing techniques.<br />
 
-                    &#8226; Developed an Android app to communicate with the Arduino programmed robot through a
-                    Bluetooth module.<br/>
-
-                    &#8226; Won the Best Innovation Award at UM–SJTU Joint Institute 2016 Summer Design Expo.<br/>
+                    &#8226; Developed an Android app to send control signals to the Arduino programmed robot through Bluetooth module.<br />
 
                 </div>
             </div>
