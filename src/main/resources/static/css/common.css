@@ -60,8 +60,8 @@ body {
 }
 
 #status {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     left: 50%;
     top: 50%;
