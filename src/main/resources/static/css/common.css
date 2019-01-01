@@ -60,15 +60,15 @@ body {
 }
 
 #status {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("/loading.gif");
     background-repeat: no-repeat;
     background-position: center;
-    margin: -100px 0 0 -100px;
 }
 
 /* Fonts */
