@@ -13,7 +13,7 @@ server {
     }
 
     location /s3/ {
-        proxy_pass https://s3.us-east-2.amazonaws.com/zian.ke/;
+        proxy_pass http://d1fbpg77zin6qp.cloudfront.net/;
     }
 
     location ~* ^/[^/]+\.(pdf|png|gif|jpe?g)$ {
