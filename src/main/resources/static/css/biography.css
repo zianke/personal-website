@@ -133,6 +133,10 @@
     margin-left: 1rem;
 }
 
+.biography-item a {
+    color: #ffffff;
+}
+
 #education, #work-experience, #research-experience, #teaching-experience, #project-experience {
     font-size: 1rem;
 }
